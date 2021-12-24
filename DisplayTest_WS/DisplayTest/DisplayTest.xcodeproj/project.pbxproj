@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		711A34381DC3539000F5B5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711A34371DC3539000F5B5D2 /* Assets.xcassets */; };
+		711A343B1DC3539000F5B5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711A34391DC3539000F5B5D2 /* Main.storyboard */; };
+		BA1D97B6263AFAE00066545F /* WindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1D97B3263AFADF0066545F /* WindowVC.m */; };
+		BA1D97B7263AFAE00066545F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1D97B4263AFADF0066545F /* main.m */; };
+		BA1D97B8263AFAE00066545F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1D97B5263AFADF0066545F /* AppDelegate.m */; };
+		BA53C59C276306CC0075FC6C /* Python in Resources */ = {isa = PBXBuildFile; fileRef = BA53C59B276306CC0075FC6C /* Python */; };
+		BAC66D4B274928E70025A91E /* ProgressBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC66D49274928E70025A91E /* ProgressBarVC.m */; };
+		BAC66D4C274928E70025A91E /* ProgressBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC66D4A274928E70025A91E /* ProgressBarVC.xib */; };
+		BAC66D55274BB46A0025A91E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BAC66D54274BB46A0025A91E /* README.md */; };
+		BAEE4E212774C1480039EF63 /* ExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEE4E202774C1480039EF63 /* ExtensionConst.m */; };
+		BAEE4E2B2775F7F70039EF63 /* CwGeneralManagerFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEE4E292775F7F70039EF63 /* CwGeneralManagerFrameWork.framework */; };
+		BAEE4E2C2775F7F70039EF63 /* CwGeneralManagerFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAEE4E292775F7F70039EF63 /* CwGeneralManagerFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BAEE4E2D2775F7F70039EF63 /* RedisZMQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEE4E2A2775F7F70039EF63 /* RedisZMQ.framework */; };
+		BAEE4E2E2775F7F70039EF63 /* RedisZMQ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAEE4E2A2775F7F70039EF63 /* RedisZMQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAEE4E2F2775F7F70039EF63 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BAEE4E2C2775F7F70039EF63 /* CwGeneralManagerFrameWork.framework in Embed Frameworks */,
+				BAEE4E2E2775F7F70039EF63 /* RedisZMQ.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		711A342B1DC3539000F5B5D2 /* DisplayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisplayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		711A34371DC3539000F5B5D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		711A343A1DC3539000F5B5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		711A343C1DC3539000F5B5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1D97B1263AFADF0066545F /* WindowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowVC.h; sourceTree = "<group>"; };
+		BA1D97B2263AFADF0066545F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA1D97B3263AFADF0066545F /* WindowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowVC.m; sourceTree = "<group>"; };
+		BA1D97B4263AFADF0066545F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA1D97B5263AFADF0066545F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA53C59B276306CC0075FC6C /* Python */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Python; sourceTree = "<group>"; };
+		BAC66D48274928E70025A91E /* ProgressBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressBarVC.h; sourceTree = "<group>"; };
+		BAC66D49274928E70025A91E /* ProgressBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressBarVC.m; sourceTree = "<group>"; };
+		BAC66D4A274928E70025A91E /* ProgressBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressBarVC.xib; sourceTree = "<group>"; };
+		BAC66D54274BB46A0025A91E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BAEE4E1F2774C1480039EF63 /* ExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionConst.h; sourceTree = "<group>"; };
+		BAEE4E202774C1480039EF63 /* ExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionConst.m; sourceTree = "<group>"; };
+		BAEE4E292775F7F70039EF63 /* CwGeneralManagerFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CwGeneralManagerFrameWork.framework; sourceTree = "<group>"; };
+		BAEE4E2A2775F7F70039EF63 /* RedisZMQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RedisZMQ.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		711A34281DC3539000F5B5D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEE4E2B2775F7F70039EF63 /* CwGeneralManagerFrameWork.framework in Frameworks */,
+				BAEE4E2D2775F7F70039EF63 /* RedisZMQ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		711A34221DC3539000F5B5D2 = {
+			isa = PBXGroup;
+			children = (
+				711A342D1DC3539000F5B5D2 /* DisplayTest */,
+				711A342C1DC3539000F5B5D2 /* Products */,
+				BAB4314625B328C1003F0AFB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		711A342C1DC3539000F5B5D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				711A342B1DC3539000F5B5D2 /* DisplayTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		711A342D1DC3539000F5B5D2 /* DisplayTest */ = {
+			isa = PBXGroup;
+			children = (
+				BAC66D47274928B80025A91E /* ProgressBar */,
+				BA1D97B0263AFADF0066545F /* Main */,
+				711A34371DC3539000F5B5D2 /* Assets.xcassets */,
+				711A34391DC3539000F5B5D2 /* Main.storyboard */,
+				711A343C1DC3539000F5B5D2 /* Info.plist */,
+				711A34311DC3539000F5B5D2 /* Supporting Files */,
+			);
+			path = DisplayTest;
+			sourceTree = "<group>";
+		};
+		711A34311DC3539000F5B5D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAC66D54274BB46A0025A91E /* README.md */,
+				BA53C59B276306CC0075FC6C /* Python */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA1D97B0263AFADF0066545F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BA1D97B4263AFADF0066545F /* main.m */,
+				BAEE4E1F2774C1480039EF63 /* ExtensionConst.h */,
+				BAEE4E202774C1480039EF63 /* ExtensionConst.m */,
+				BA1D97B1263AFADF0066545F /* WindowVC.h */,
+				BA1D97B3263AFADF0066545F /* WindowVC.m */,
+				BA1D97B2263AFADF0066545F /* AppDelegate.h */,
+				BA1D97B5263AFADF0066545F /* AppDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BAB4314625B328C1003F0AFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAEE4E292775F7F70039EF63 /* CwGeneralManagerFrameWork.framework */,
+				BAEE4E2A2775F7F70039EF63 /* RedisZMQ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAC66D47274928B80025A91E /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				BAC66D48274928E70025A91E /* ProgressBarVC.h */,
+				BAC66D49274928E70025A91E /* ProgressBarVC.m */,
+				BAC66D4A274928E70025A91E /* ProgressBarVC.xib */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		711A342A1DC3539000F5B5D2 /* DisplayTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711A343F1DC3539000F5B5D2 /* Build configuration list for PBXNativeTarget "DisplayTest" */;
+			buildPhases = (
+				711A34271DC3539000F5B5D2 /* Sources */,
+				711A34281DC3539000F5B5D2 /* Frameworks */,
+				711A34291DC3539000F5B5D2 /* Resources */,
+				BAEE4E2F2775F7F70039EF63 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DisplayTest;
+			productName = DisplayTest;
+			productReference = 711A342B1DC3539000F5B5D2 /* DisplayTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		711A34231DC3539000F5B5D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Suncode;
+				TargetAttributes = {
+					711A342A1DC3539000F5B5D2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 711A34261DC3539000F5B5D2 /* Build configuration list for PBXProject "DisplayTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 711A34221DC3539000F5B5D2;
+			productRefGroup = 711A342C1DC3539000F5B5D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				711A342A1DC3539000F5B5D2 /* DisplayTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		711A34291DC3539000F5B5D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC66D4C274928E70025A91E /* ProgressBarVC.xib in Resources */,
+				BA53C59C276306CC0075FC6C /* Python in Resources */,
+				711A34381DC3539000F5B5D2 /* Assets.xcassets in Resources */,
+				711A343B1DC3539000F5B5D2 /* Main.storyboard in Resources */,
+				BAC66D55274BB46A0025A91E /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		711A34271DC3539000F5B5D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA1D97B8263AFAE00066545F /* AppDelegate.m in Sources */,
+				BAC66D4B274928E70025A91E /* ProgressBarVC.m in Sources */,
+				BAEE4E212774C1480039EF63 /* ExtensionConst.m in Sources */,
+				BA1D97B6263AFAE00066545F /* WindowVC.m in Sources */,
+				BA1D97B7263AFAE00066545F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		711A34391DC3539000F5B5D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				711A343A1DC3539000F5B5D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		711A343D1DC3539000F5B5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		711A343E1DC3539000F5B5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		711A34401DC3539000F5B5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DisplayTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DisplayTest/Redis/lib",
+					"$(PROJECT_DIR)/DisplayTest/zmq",
+					"$(PROJECT_DIR)/DisplayTest/RedisZMQ/zmq",
+					"$(PROJECT_DIR)/DisplayTest/RedisZMQ/Redis/Redis/lib",
+					"$(PROJECT_DIR)/DisplayTest/RedisZMQ/Redis/Class",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = app.io.DisplayTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		711A34411DC3539000F5B5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DisplayTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DisplayTest/Redis/lib",
+					"$(PROJECT_DIR)/DisplayTest/zmq",
+					"$(PROJECT_DIR)/DisplayTest/RedisZMQ/zmq",
+					"$(PROJECT_DIR)/DisplayTest/RedisZMQ/Redis/Redis/lib",
+					"$(PROJECT_DIR)/DisplayTest/RedisZMQ/Redis/Class",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = app.io.DisplayTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		711A34261DC3539000F5B5D2 /* Build configuration list for PBXProject "DisplayTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711A343D1DC3539000F5B5D2 /* Debug */,
+				711A343E1DC3539000F5B5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		711A343F1DC3539000F5B5D2 /* Build configuration list for PBXNativeTarget "DisplayTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711A34401DC3539000F5B5D2 /* Debug */,
+				711A34411DC3539000F5B5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 711A34231DC3539000F5B5D2 /* Project object */;
+}
