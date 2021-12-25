@@ -27,7 +27,7 @@
 
 -(void)viewDidAppear{
     [super viewDidAppear];
-    self.isActive = YES;
+    
 //    [[NSNotificationCenter defaultCenter] addObserver:self
 //                                             selector:@selector(windowWillClose:)
 //                                                 name:NSWindowWillCloseNotification
@@ -41,7 +41,9 @@
 }
 
 -(void)dismisssViewOnViewController:(NSViewController *)vc{
+    self.isActive = NO;
     dispatch_async(dispatch_get_main_queue(), ^{
+        
         [vc dismissViewController:self];
         
     });
@@ -49,8 +51,13 @@
 }
 
 -(void)showViewOnViewController:(NSViewController *)vc{
+//    if (self.isActive) {
+//        return;
+//    }
+    self.isActive = YES;
     dispatch_async(dispatch_get_main_queue(), ^{
         _mainVc = vc;
+        
         [vc presentViewControllerAsModalWindow:self];
         
     });
@@ -59,8 +66,12 @@
 
 }
 -(void)showViewAsSheetOnViewController:(NSViewController *)vc{
+//    if (self.isActive) {
+//        return;
+//    }
     dispatch_async(dispatch_get_main_queue(), ^{
         _mainVc = vc;
+        self.isActive = YES;
         [vc presentViewControllerAsSheet:self];
         
     });
@@ -72,9 +83,9 @@
 //}
 
 -(void)close{
-    
+    self.isActive = NO;
     dispatch_async(dispatch_get_main_queue(), ^{
-        self.isActive = NO;
+        
         [_mainVc dismissViewController:self];
         
     });

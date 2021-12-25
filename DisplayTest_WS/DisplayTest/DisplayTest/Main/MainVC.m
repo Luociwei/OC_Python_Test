@@ -41,19 +41,19 @@
 
 
 -(void)generate_py:(NSString *)path{
-    self.progressBarVC = [[ProgressBarVC alloc] init];
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-
-            
-            [self.progressBarVC showViewAsSheetOnViewController:self];
-            
-            [self.progressBarVC setProgressBarPercentValue:0.5 info:@"ssss"];
-            [NSThread sleepForTimeInterval:3];
-            [self.progressBarVC setProgressBarPercentValue:0.9 info:@"ssss"];
-            [NSThread sleepForTimeInterval:3];
-            [self.progressBarVC close];
-
-    });
+//    self.progressBarVC = [[ProgressBarVC alloc] init];
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//
+//
+//            [self.progressBarVC showViewAsSheetOnViewController:self];
+//
+//            [self.progressBarVC setProgressBarPercentValue:0.5 info:@"ssss"];
+//            [NSThread sleepForTimeInterval:3];
+//            [self.progressBarVC setProgressBarPercentValue:0.9 info:@"ssss"];
+//            [NSThread sleepForTimeInterval:3];
+//            [self.progressBarVC close];
+//
+//    });
 
     
     AppDelegate * appDelegate = (AppDelegate*)[NSApplication sharedApplication].delegate;
@@ -63,10 +63,12 @@
     if (ret > 0)
     {
         BOOL __block isShow = NO;
+        self.progressBarVC = [[ProgressBarVC alloc] init];
+        
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-
+            
             [NSThread sleepForTimeInterval:0.5];
-
+            
             int i =0;
             NSString *last_percent_str = @"";
             while (true) {
@@ -80,76 +82,85 @@
                         continue;
                     }else{
                         last_percent_str = percent_str;
-                        float per = [percent_str floatValue];
-                        NSLog(@"mes:%@--percent:%f",percent_str,per);
+                        float per_float = [percent_str floatValue];
+                        if (!isShow) {
+                            isShow = YES;
+                            [self.progressBarVC showViewAsSheetOnViewController:self];
+                        }else{
+                            [self.progressBarVC setProgressBarPercentValue:per_float info:info_str];
+                        }
+                        
+                        //                        NSLog(@"mes:%@--percent:%f",percent_str,per);
                         NSLog(@"1111111--%d",i);
-                        if (per == 1) {
+                        if (per_float == 1) {
+                            [NSThread sleepForTimeInterval:0.5];
+                            [self.progressBarVC close];
                             break;
                         }
                     }
- 
+                    
                 }
             }
-//            'percent': percent_str,
-//            'info': info_str,
+            //            'percent': percent_str,
+            //            'info': info_str,
             
-//            while (true) {
-//                i = i+1;
-//                [NSThread sleepForTimeInterval:0.05];
-//                //                NSString *redis_ret = [appDelegate.redis get:@"common"];
-//                NSDictionary *loadingDict =(NSDictionary *)[appDelegate.redis get:@"common"];
-//
-//
-//                if (loadingDict) {
-//
-//                    NSString *title = [loadingDict objectForKey:@"title"];
-//                    NSArray *infoArr = [loadingDict objectForKey:@"info"];
-//                    if ([title isEqualToString:@"warning"] && (infoArr.count >=2)) {
-//
-//                        NSString *name = infoArr[0];
-//                        NSString *mes = infoArr[1];
-//                        NSLog(@"name:%@---mes:%@",name,mes);
-//                        break;
-//
-//                    }else if ([title isEqualToString:@"loading"]){
-//
-//                        NSString *mes = infoArr[0];
-//                        float per = [infoArr[1] floatValue];
-//                        NSLog(@"mes:%@--percent:%f",mes,per);
-//                        //
-////                        if (!isShow) {
-////                            isShow = YES;
-////
-////                            [self.progressBarVC showViewAsSheetOnViewController:self];
-////
-////                        }else{
-////                            if (self.progressBarVC.isActive) {
-////
-////                                [self.progressBarVC setProgressBarPercentValue:per info:mes];
-////
-////                            }
-////                        }
-//
-//                        if (per >= 1) {
-//                            [NSThread sleepForTimeInterval:0.5];
-//
-////                            [self.progressBarVC close];
-//
-//                            break;
-//
-//
-//                        }
-//
-//                    }
-//
-//                }else{
-//                    NSLog(@"1111111--%d",i);
-//                }
-//
-//            }
-
+            //            while (true) {
+            //                i = i+1;
+            //                [NSThread sleepForTimeInterval:0.05];
+            //                //                NSString *redis_ret = [appDelegate.redis get:@"common"];
+            //                NSDictionary *loadingDict =(NSDictionary *)[appDelegate.redis get:@"common"];
+            //
+            //
+            //                if (loadingDict) {
+            //
+            //                    NSString *title = [loadingDict objectForKey:@"title"];
+            //                    NSArray *infoArr = [loadingDict objectForKey:@"info"];
+            //                    if ([title isEqualToString:@"warning"] && (infoArr.count >=2)) {
+            //
+            //                        NSString *name = infoArr[0];
+            //                        NSString *mes = infoArr[1];
+            //                        NSLog(@"name:%@---mes:%@",name,mes);
+            //                        break;
+            //
+            //                    }else if ([title isEqualToString:@"loading"]){
+            //
+            //                        NSString *mes = infoArr[0];
+            //                        float per = [infoArr[1] floatValue];
+            //                        NSLog(@"mes:%@--percent:%f",mes,per);
+            //                        //
+            ////                        if (!isShow) {
+            ////                            isShow = YES;
+            ////
+            ////                            [self.progressBarVC showViewAsSheetOnViewController:self];
+            ////
+            ////                        }else{
+            ////                            if (self.progressBarVC.isActive) {
+            ////
+            ////                                [self.progressBarVC setProgressBarPercentValue:per info:mes];
+            ////
+            ////                            }
+            ////                        }
+            //
+            //                        if (per >= 1) {
+            //                            [NSThread sleepForTimeInterval:0.5];
+            //
+            ////                            [self.progressBarVC close];
+            //
+            //                            break;
+            //
+            //
+            //                        }
+            //
+            //                    }
+            //
+            //                }else{
+            //                    NSLog(@"1111111--%d",i);
+            //                }
+            //
+            //            }
+            
             id response = [appDelegate.zmqMainPy read];
-
+            
             if ([response isKindOfClass:[NSArray class]]) {
                 NSLog(@"NSArray");
             }else if ([response isKindOfClass:[NSString class]]){
@@ -170,9 +181,9 @@
             
             NSLog(@"%@",response);
             [CWRedis flushall];
-//            [NSThread sleepForTimeInterval:1];
-                //                                return;
-
+            //            [NSThread sleepForTimeInterval:1];
+            //                                return;
+            
         });
     }
 }

@@ -65,13 +65,18 @@ def run():
                         continue
                     loop_count = 5
                     for index in range(loop_count):
+                        time_str = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
+                        with open(test_log_file, 'a') as file_object:
+
+                            file_object.write(time_str + 'test...'+str(index+1) + '--' + str((index+1)*1.0/loop_count)+"\n")
 
                         redis_client.set_loading_data('test...', str((index+1)*1.0/loop_count))
                         if index == loop_count-1:
                             time.sleep(0.3)
                         else:
                             time.sleep(0.6)
-                        print ('index..', index)
+
+                        # print ('index..', index)
 
                     zmq_send_msg = msg_path
 

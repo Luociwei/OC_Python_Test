@@ -20,6 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString *desktopPath = [NSString cw_getDesktopPath];
+    NSString *testLogDir = [desktopPath stringByAppendingPathComponent:@"demo"];
+    NSString *testLogPath = [desktopPath stringByAppendingPathComponent:@"demo/test_log.txt"];
+    [FileManager cw_removeItemAtPath:testLogPath];
+    [FileManager cw_createFile:testLogDir isDirectory:YES];
+    [FileManager cw_createFile:testLogPath isDirectory:NO];
+    [self updateLog:testLogPath];
+    
     _mutLogString = [NSMutableString string];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(showLog:)
@@ -34,6 +42,24 @@
     
 }
 
+
+-(void)updateLog:(NSString *)file{
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        while (1) {
+            NSString *content = [FileManager cw_readFromFile:file];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.logTextView.string = content;
+                [self.logTextView scrollRangeToVisible:NSMakeRange(self.logTextView.string.length, 1)];
+            });
+            [NSThread sleepForTimeInterval:0.5];
+        }
+        
+            
+
+    });
+    
+}
 
 +(void)postNotificationWithLog:(NSString *)log type:(NSString *)type{
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];

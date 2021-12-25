@@ -42,7 +42,9 @@
 
 -(void)setProgressBarPercentValue:(float)percent info:(NSString *)info{
 //    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-    
+    if (!self.isActive) {
+        return;
+    }
         dispatch_async(dispatch_get_main_queue(), ^{
             double doubleVaule = (double) percent*100.0;
             if (doubleVaule>0) {
@@ -50,7 +52,8 @@
                 
             }
             if (info.length) {
-                _LableInfo.stringValue = [NSString stringWithFormat:@"Loading....%@",info];
+                int per_int = percent*100;
+                _LableInfo.stringValue = [NSString stringWithFormat:@"Loading....%@---%%%d",info,per_int];
             }
         });
 //    });

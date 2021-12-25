@@ -49,12 +49,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    NSString *desktopPath = [NSString cw_getDesktopPath];
-    NSString *testLogDir = [desktopPath stringByAppendingPathComponent:@"demo"];
-    NSString *testLogPath = [desktopPath stringByAppendingPathComponent:@"demo/test_log.txt"];
-    [FileManager cw_removeItemAtPath:testLogPath];
-    [FileManager cw_createFile:testLogDir isDirectory:YES];
-    [FileManager cw_createFile:testLogPath isDirectory:NO];
     
     scriptFilePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Python/pythonProject/profile"];
 
