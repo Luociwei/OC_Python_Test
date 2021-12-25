@@ -11,79 +11,74 @@ from atlaslog_package import atlas_log
 is_debug = 0
 if is_debug:
     test_str = {
-        'name': 'AtlasLog',
-        'event': 'GenerateClick',
-        'params': ["/Users/ciweiluo/Desktop/Louis/GitHub/Atlas2_Tool_WS/TestLog/unit-archive"]
+        'name': 'ScriptListVC',
+        'event': 'ScriptClick',
+        'params': ["/Users/ciweiluo/Desktop/profile/Project_C/ProjectC_Script_2.json"]
     }
 
 redis_client = cw_redis.RedisClient()
 
 zmqClient = cw_zmq.ZmqClient("tcp://127.0.0.1:3100")
 
+test_log_file = common.get_desk_p() + '/demo/test_log.txt'
 
+
+# def savelog(log_content):
+#     common.save_log(test_log_file, log_content)
+
+# can't write the log to file in run() function.
 def run():
     while True:
+        redis_client.flushdb()
         time.sleep(0.1)
         try:
             print("wait for zmq client ...")
+
             if is_debug:
                 zmq_recv_msg = test_str
             else:
                 zmq_recv_msg = zmqClient.recv()
 
+            # savelog("wait for zmq client ...")
             print('zmq_recv_msg:{0}', zmq_recv_msg)
-            redis_client.flushdb()
-
+            
             msg_name = zmq_recv_msg['name']
             msg_event = zmq_recv_msg['event']
             msg_path_arr = zmq_recv_msg['params']
 
             if len(msg_path_arr):
                 msg_path = msg_path_arr[0]
+
             else:
-                redis_client.set_common_warning(["Error!!!", "Not found the file path,pls check."])
+                zmqClient.send_warning('Not found the file path,pls check.')
                 continue
 
             zmq_send_msg = ''
-            if msg_name == 'AtlasLog':
-                if msg_event == 'GenerateClick':
-                    print("generate_click msg_mode_path:", msg_path)
+            if msg_name == 'ScriptListVC':
+                if msg_event == 'ScriptClick':
+                    print("ScriptClick msg_mode_path:", msg_path)
+                    print("msg_path type:", type(msg_path))
 
                     if len(msg_path) == 0 or not os.path.exists(msg_path):
 
-                        redis_client.set_common_warning(["Error!!!", "Not found the file path,pls check."])
-                        zmqClient.send('ssss')
+                        zmqClient.send_warning('Not found the file path,pls check.')
                         continue
-                    all_file_list = common.get_file_path_list(msg_path, True)
-                    print('all_file_list count:', len(all_file_list))
-                    records_path_list = common.filter_list(all_file_list, [r'system/records.csv'])
-                    print('file_list count:', len(records_path_list))
-                    if len(records_path_list) < 1:
-                        redis_client.set_common_warning(["Error!!!", "Not found the records.csv file,pls check."])
-                        continue
-                    index = 0
-                    item_dict_arr = []
-                    print('len(records_path_list)', len(records_path_list))
-                    for records_file_path in records_path_list:
-                        item_mode = atlas_log.ItemMode()
-                        item_mode.get_mode(records_file_path, msg_path)
-                        item_mode.index = index
-                        item_dict_arr.append(item_mode.get_dict())
+                    loop_count = 5
+                    for index in range(loop_count):
 
-                        index = index + 1
+                        redis_client.set_loading_data('test...', str((index+1)*1.0/loop_count))
+                        if index == loop_count-1:
+                            time.sleep(0.3)
+                        else:
+                            time.sleep(0.6)
+                        print ('index..', index)
 
-                        redis_client.set_common_loading([item_mode.sn, str(index*1.0/len(records_path_list))])
-                        # time.sleep(2)
-                        if index == len(records_path_list):
-                            time.sleep(0.5)
-
-                    # redis_client.set_common('finish', 1.0)
-                    zmq_send_msg = item_dict_arr
+                    zmq_send_msg = msg_path
 
                 else:
                     pass
 
-            elif msg_name == 'AtlasScript':
+            elif msg_name == 'Others':
                 pass
             else:
                 pass
@@ -98,6 +93,7 @@ def run():
 
 
 if __name__ == '__main__':
+    # common.remove_file(test_log_file)
 
     run()
     # # zmq_client = ZmqClient("tcp://127.0.0.1:3200")

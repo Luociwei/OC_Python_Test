@@ -42,8 +42,9 @@
 
 -(void)setProgressBarPercentValue:(float)percent info:(NSString *)info{
 //    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-    double doubleVaule = (double) percent*100.0;
+    
         dispatch_async(dispatch_get_main_queue(), ^{
+            double doubleVaule = (double) percent*100.0;
             if (doubleVaule>0) {
                 _ProgressBar.doubleValue = doubleVaule;
                 
@@ -55,7 +56,7 @@
 //    });
 
     
-    return ;
+//    return ;
 }
 
 @end

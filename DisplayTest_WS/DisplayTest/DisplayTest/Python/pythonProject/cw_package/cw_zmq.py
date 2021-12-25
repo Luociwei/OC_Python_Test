@@ -5,7 +5,7 @@
 # @File  : zmq_socket.py
 
 import json
-import cw_common as common
+from cw_package import cw_common as common
 
 try:
     import zmq
@@ -56,22 +56,35 @@ class ZmqClient(object):
             print('zmq connect fail.url:{0}'.format(url))
             print(err)
 
+    def send_warning(self, str_message):
+        mes_dict = {
+            'title': 'warning',
+            'info': str_message
+        }
+        self.send(mes_dict)
+
     def send(self, cmd):
 
-        if len(cmd) == 0:
+        send_cmd = cmd
+        if type(cmd) == type(u''):
+            # unicode转string
+            send_cmd = cmd.encode("utf-8")
+
+        b_result = type(send_cmd) == type('') or type(send_cmd) == type([]) or type(send_cmd) == type({})
+        if not b_result:
+
+            print ('error:type is--', type(send_cmd))
+            print ('the cmd inputted must be string or list or dict!!!')
+            return False
+
+        if len(send_cmd) == 0:
             error_mes = 'Error:the cmd inputted is null!!!'
             print (error_mes)
             return False
 
-        b_result = type(cmd) == type('') or type(cmd) == type([]) or type(cmd) == type({})
-        if not b_result:
-            print ('the cmd inputted must be string or list or dict!!!')
-            return False
-
-        send_cmd = cmd
         b_result = True
         try:
-            if type(cmd) == type([]) or type(cmd) == type({}):
+            if type(send_cmd) == type([]) or type(send_cmd) == type({}):
                 send_cmd = json.dumps(cmd)
             # self.socket.send(send_cmd.encode('ascii'))
             if common.get_version() < 3:
@@ -87,6 +100,7 @@ class ZmqClient(object):
 
     def recv(self):
         ret = self.socket.recv()
+        print('ret_type:', type(ret))
         recv = ret
         if common.get_version() >= 3:
             recv = ret.decode('utf-8')

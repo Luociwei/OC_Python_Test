@@ -38,7 +38,7 @@
 									<key>GID</key>
 									<integer>80</integer>
 									<key>PATH</key>
-									<string>/Users/ciweiluo/Desktop/Atlas2_Review_Tool.app</string>
+									<string>/Users/ciweiluo/Desktop/Louis/GitHub/OC_Python_Test/packages/My_Review_Tool_3.7.app</string>
 									<key>PATH_TYPE</key>
 									<integer>0</integer>
 									<key>PERMISSIONS</key>
@@ -514,7 +514,7 @@
 			<key>PACKAGE_FILES</key>
 			<dict>
 				<key>DEFAULT_INSTALL_LOCATION</key>
-				<string>/Users/Shared</string>
+				<string>/Library/Frameworks</string>
 				<key>HIERARCHY</key>
 				<dict>
 					<key>CHILDREN</key>
@@ -620,7 +620,24 @@
 								</dict>
 								<dict>
 									<key>CHILDREN</key>
-									<array/>
+									<array>
+										<dict>
+											<key>CHILDREN</key>
+											<array/>
+											<key>GID</key>
+											<integer>0</integer>
+											<key>PATH</key>
+											<string>/Users/ciweiluo/Desktop/Louis/GitHub/OC_Python_Test/packages/Python.framework</string>
+											<key>PATH_TYPE</key>
+											<integer>0</integer>
+											<key>PERMISSIONS</key>
+											<integer>493</integer>
+											<key>TYPE</key>
+											<integer>3</integer>
+											<key>UID</key>
+											<integer>0</integer>
+										</dict>
+									</array>
 									<key>GID</key>
 									<integer>0</integer>
 									<key>PATH</key>
@@ -877,24 +894,7 @@
 							<array>
 								<dict>
 									<key>CHILDREN</key>
-									<array>
-										<dict>
-											<key>CHILDREN</key>
-											<array/>
-											<key>GID</key>
-											<integer>0</integer>
-											<key>PATH</key>
-											<string>/Users/ciweiluo/Desktop/CPK_Log</string>
-											<key>PATH_TYPE</key>
-											<integer>0</integer>
-											<key>PERMISSIONS</key>
-											<integer>493</integer>
-											<key>TYPE</key>
-											<integer>3</integer>
-											<key>UID</key>
-											<integer>0</integer>
-										</dict>
-									</array>
+									<array/>
 									<key>GID</key>
 									<integer>0</integer>
 									<key>PATH</key>
@@ -992,8 +992,94 @@
 		</dict>
 		<key>PROJECT_PRESENTATION</key>
 		<dict>
+			<key>BACKGROUND</key>
+			<dict>
+				<key>APPAREANCES</key>
+				<dict>
+					<key>DARK_AQUA</key>
+					<dict/>
+					<key>LIGHT_AQUA</key>
+					<dict/>
+				</dict>
+				<key>SHARED_SETTINGS_FOR_ALL_APPAREANCES</key>
+				<true/>
+			</dict>
 			<key>INSTALLATION_STEPS</key>
-			<array/>
+			<array>
+				<dict>
+					<key>ICPRESENTATION_CHAPTER_VIEW_CONTROLLER_CLASS</key>
+					<string>ICPresentationViewIntroductionController</string>
+					<key>INSTALLER_PLUGIN</key>
+					<string>Introduction</string>
+					<key>LIST_TITLE_KEY</key>
+					<string>InstallerSectionTitle</string>
+				</dict>
+				<dict>
+					<key>ICPRESENTATION_CHAPTER_VIEW_CONTROLLER_CLASS</key>
+					<string>ICPresentationViewReadMeController</string>
+					<key>INSTALLER_PLUGIN</key>
+					<string>ReadMe</string>
+					<key>LIST_TITLE_KEY</key>
+					<string>InstallerSectionTitle</string>
+				</dict>
+				<dict>
+					<key>ICPRESENTATION_CHAPTER_VIEW_CONTROLLER_CLASS</key>
+					<string>ICPresentationViewLicenseController</string>
+					<key>INSTALLER_PLUGIN</key>
+					<string>License</string>
+					<key>LIST_TITLE_KEY</key>
+					<string>InstallerSectionTitle</string>
+				</dict>
+				<dict>
+					<key>ICPRESENTATION_CHAPTER_VIEW_CONTROLLER_CLASS</key>
+					<string>ICPresentationViewDestinationSelectController</string>
+					<key>INSTALLER_PLUGIN</key>
+					<string>TargetSelect</string>
+					<key>LIST_TITLE_KEY</key>
+					<string>InstallerSectionTitle</string>
+				</dict>
+				<dict>
+					<key>ICPRESENTATION_CHAPTER_VIEW_CONTROLLER_CLASS</key>
+					<string>ICPresentationViewInstallationTypeController</string>
+					<key>INSTALLER_PLUGIN</key>
+					<string>PackageSelection</string>
+					<key>LIST_TITLE_KEY</key>
+					<string>InstallerSectionTitle</string>
+				</dict>
+				<dict>
+					<key>ICPRESENTATION_CHAPTER_VIEW_CONTROLLER_CLASS</key>
+					<string>ICPresentationViewInstallationController</string>
+					<key>INSTALLER_PLUGIN</key>
+					<string>Install</string>
+					<key>LIST_TITLE_KEY</key>
+					<string>InstallerSectionTitle</string>
+				</dict>
+				<dict>
+					<key>ICPRESENTATION_CHAPTER_VIEW_CONTROLLER_CLASS</key>
+					<string>ICPresentationViewSummaryController</string>
+					<key>INSTALLER_PLUGIN</key>
+					<string>Summary</string>
+					<key>LIST_TITLE_KEY</key>
+					<string>InstallerSectionTitle</string>
+				</dict>
+			</array>
+			<key>INTRODUCTION</key>
+			<dict>
+				<key>LOCALIZATIONS</key>
+				<array/>
+			</dict>
+			<key>LICENSE</key>
+			<dict>
+				<key>LOCALIZATIONS</key>
+				<array/>
+				<key>MODE</key>
+				<integer>0</integer>
+			</dict>
+			<key>README</key>
+			<dict>
+				<key>LOCALIZATIONS</key>
+				<array/>
+			</dict>
 			<key>TITLE</key>
 			<dict>
 				<key>LOCALIZATIONS</key>

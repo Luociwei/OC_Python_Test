@@ -9,18 +9,25 @@
 /* Begin PBXBuildFile section */
 		711A34381DC3539000F5B5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711A34371DC3539000F5B5D2 /* Assets.xcassets */; };
 		711A343B1DC3539000F5B5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711A34391DC3539000F5B5D2 /* Main.storyboard */; };
-		BA1D97B6263AFAE00066545F /* WindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1D97B3263AFADF0066545F /* WindowVC.m */; };
 		BA1D97B7263AFAE00066545F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1D97B4263AFADF0066545F /* main.m */; };
-		BA1D97B8263AFAE00066545F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1D97B5263AFADF0066545F /* AppDelegate.m */; };
 		BA53C59C276306CC0075FC6C /* Python in Resources */ = {isa = PBXBuildFile; fileRef = BA53C59B276306CC0075FC6C /* Python */; };
 		BAC66D4B274928E70025A91E /* ProgressBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC66D49274928E70025A91E /* ProgressBarVC.m */; };
 		BAC66D4C274928E70025A91E /* ProgressBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC66D4A274928E70025A91E /* ProgressBarVC.xib */; };
 		BAC66D55274BB46A0025A91E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BAC66D54274BB46A0025A91E /* README.md */; };
-		BAEE4E212774C1480039EF63 /* ExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEE4E202774C1480039EF63 /* ExtensionConst.m */; };
 		BAEE4E2B2775F7F70039EF63 /* CwGeneralManagerFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEE4E292775F7F70039EF63 /* CwGeneralManagerFrameWork.framework */; };
 		BAEE4E2C2775F7F70039EF63 /* CwGeneralManagerFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAEE4E292775F7F70039EF63 /* CwGeneralManagerFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BAEE4E2D2775F7F70039EF63 /* RedisZMQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEE4E2A2775F7F70039EF63 /* RedisZMQ.framework */; };
 		BAEE4E2E2775F7F70039EF63 /* RedisZMQ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAEE4E2A2775F7F70039EF63 /* RedisZMQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BAEE4E9A2776BE070039EF63 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAEE4E8B2776BE070039EF63 /* MainVC.xib */; };
+		BAEE4E9B2776BE070039EF63 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEE4E8C2776BE070039EF63 /* MainVC.m */; };
+		BAEE4E9C2776BE070039EF63 /* ShowingLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEE4E8D2776BE070039EF63 /* ShowingLogVC.m */; };
+		BAEE4E9D2776BE070039EF63 /* ExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEE4E8F2776BE070039EF63 /* ExtensionConst.m */; };
+		BAEE4E9E2776BE070039EF63 /* LeftFileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEE4E902776BE070039EF63 /* LeftFileVC.m */; };
+		BAEE4E9F2776BE070039EF63 /* WindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEE4E912776BE070039EF63 /* WindowVC.m */; };
+		BAEE4EA02776BE070039EF63 /* ShowingLogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAEE4E922776BE070039EF63 /* ShowingLogVC.xib */; };
+		BAEE4EA12776BE070039EF63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEE4E942776BE070039EF63 /* AppDelegate.m */; };
+		BAEE4EA22776BE070039EF63 /* LeftFileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAEE4E962776BE070039EF63 /* LeftFileVC.xib */; };
+		BAEE4EA32776BE070039EF63 /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEE4E972776BE070039EF63 /* SplitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,20 +50,31 @@
 		711A34371DC3539000F5B5D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		711A343A1DC3539000F5B5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		711A343C1DC3539000F5B5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA1D97B1263AFADF0066545F /* WindowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowVC.h; sourceTree = "<group>"; };
-		BA1D97B2263AFADF0066545F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BA1D97B3263AFADF0066545F /* WindowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowVC.m; sourceTree = "<group>"; };
 		BA1D97B4263AFADF0066545F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BA1D97B5263AFADF0066545F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BA53C59B276306CC0075FC6C /* Python */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Python; sourceTree = "<group>"; };
 		BAC66D48274928E70025A91E /* ProgressBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressBarVC.h; sourceTree = "<group>"; };
 		BAC66D49274928E70025A91E /* ProgressBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressBarVC.m; sourceTree = "<group>"; };
 		BAC66D4A274928E70025A91E /* ProgressBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressBarVC.xib; sourceTree = "<group>"; };
 		BAC66D54274BB46A0025A91E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		BAEE4E1F2774C1480039EF63 /* ExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionConst.h; sourceTree = "<group>"; };
-		BAEE4E202774C1480039EF63 /* ExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionConst.m; sourceTree = "<group>"; };
 		BAEE4E292775F7F70039EF63 /* CwGeneralManagerFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CwGeneralManagerFrameWork.framework; sourceTree = "<group>"; };
 		BAEE4E2A2775F7F70039EF63 /* RedisZMQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RedisZMQ.framework; sourceTree = "<group>"; };
+		BAEE4E892776BE070039EF63 /* WindowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowVC.h; sourceTree = "<group>"; };
+		BAEE4E8A2776BE070039EF63 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAEE4E8B2776BE070039EF63 /* MainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		BAEE4E8C2776BE070039EF63 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		BAEE4E8D2776BE070039EF63 /* ShowingLogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowingLogVC.m; sourceTree = "<group>"; };
+		BAEE4E8E2776BE070039EF63 /* SplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
+		BAEE4E8F2776BE070039EF63 /* ExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionConst.m; sourceTree = "<group>"; };
+		BAEE4E902776BE070039EF63 /* LeftFileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftFileVC.m; sourceTree = "<group>"; };
+		BAEE4E912776BE070039EF63 /* WindowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowVC.m; sourceTree = "<group>"; };
+		BAEE4E922776BE070039EF63 /* ShowingLogVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowingLogVC.xib; sourceTree = "<group>"; };
+		BAEE4E932776BE070039EF63 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		BAEE4E942776BE070039EF63 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAEE4E952776BE070039EF63 /* ExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionConst.h; sourceTree = "<group>"; };
+		BAEE4E962776BE070039EF63 /* LeftFileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftFileVC.xib; sourceTree = "<group>"; };
+		BAEE4E972776BE070039EF63 /* SplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitViewController.m; sourceTree = "<group>"; };
+		BAEE4E982776BE070039EF63 /* ShowingLogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowingLogVC.h; sourceTree = "<group>"; };
+		BAEE4E992776BE070039EF63 /* LeftFileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftFileVC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +110,8 @@
 		711A342D1DC3539000F5B5D2 /* DisplayTest */ = {
 			isa = PBXGroup;
 			children = (
+				BAEE4E882776BE070039EF63 /* Main */,
 				BAC66D47274928B80025A91E /* ProgressBar */,
-				BA1D97B0263AFADF0066545F /* Main */,
 				711A34371DC3539000F5B5D2 /* Assets.xcassets */,
 				711A34391DC3539000F5B5D2 /* Main.storyboard */,
 				711A343C1DC3539000F5B5D2 /* Info.plist */,
@@ -105,24 +123,11 @@
 		711A34311DC3539000F5B5D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA1D97B4263AFADF0066545F /* main.m */,
 				BAC66D54274BB46A0025A91E /* README.md */,
 				BA53C59B276306CC0075FC6C /* Python */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BA1D97B0263AFADF0066545F /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				BA1D97B4263AFADF0066545F /* main.m */,
-				BAEE4E1F2774C1480039EF63 /* ExtensionConst.h */,
-				BAEE4E202774C1480039EF63 /* ExtensionConst.m */,
-				BA1D97B1263AFADF0066545F /* WindowVC.h */,
-				BA1D97B3263AFADF0066545F /* WindowVC.m */,
-				BA1D97B2263AFADF0066545F /* AppDelegate.h */,
-				BA1D97B5263AFADF0066545F /* AppDelegate.m */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		BAB4314625B328C1003F0AFB /* Frameworks */ = {
@@ -142,6 +147,30 @@
 				BAC66D4A274928E70025A91E /* ProgressBarVC.xib */,
 			);
 			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+		BAEE4E882776BE070039EF63 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BAEE4E8A2776BE070039EF63 /* AppDelegate.h */,
+				BAEE4E942776BE070039EF63 /* AppDelegate.m */,
+				BAEE4E892776BE070039EF63 /* WindowVC.h */,
+				BAEE4E912776BE070039EF63 /* WindowVC.m */,
+				BAEE4E932776BE070039EF63 /* MainVC.h */,
+				BAEE4E8C2776BE070039EF63 /* MainVC.m */,
+				BAEE4E8B2776BE070039EF63 /* MainVC.xib */,
+				BAEE4E982776BE070039EF63 /* ShowingLogVC.h */,
+				BAEE4E8D2776BE070039EF63 /* ShowingLogVC.m */,
+				BAEE4E922776BE070039EF63 /* ShowingLogVC.xib */,
+				BAEE4E8E2776BE070039EF63 /* SplitViewController.h */,
+				BAEE4E972776BE070039EF63 /* SplitViewController.m */,
+				BAEE4E952776BE070039EF63 /* ExtensionConst.h */,
+				BAEE4E8F2776BE070039EF63 /* ExtensionConst.m */,
+				BAEE4E992776BE070039EF63 /* LeftFileVC.h */,
+				BAEE4E902776BE070039EF63 /* LeftFileVC.m */,
+				BAEE4E962776BE070039EF63 /* LeftFileVC.xib */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,8 +236,11 @@
 				BAC66D4C274928E70025A91E /* ProgressBarVC.xib in Resources */,
 				BA53C59C276306CC0075FC6C /* Python in Resources */,
 				711A34381DC3539000F5B5D2 /* Assets.xcassets in Resources */,
+				BAEE4EA22776BE070039EF63 /* LeftFileVC.xib in Resources */,
+				BAEE4E9A2776BE070039EF63 /* MainVC.xib in Resources */,
 				711A343B1DC3539000F5B5D2 /* Main.storyboard in Resources */,
 				BAC66D55274BB46A0025A91E /* README.md in Resources */,
+				BAEE4EA02776BE070039EF63 /* ShowingLogVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,11 +251,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA1D97B8263AFAE00066545F /* AppDelegate.m in Sources */,
+				BAEE4E9B2776BE070039EF63 /* MainVC.m in Sources */,
 				BAC66D4B274928E70025A91E /* ProgressBarVC.m in Sources */,
-				BAEE4E212774C1480039EF63 /* ExtensionConst.m in Sources */,
-				BA1D97B6263AFAE00066545F /* WindowVC.m in Sources */,
+				BAEE4E9F2776BE070039EF63 /* WindowVC.m in Sources */,
+				BAEE4E9D2776BE070039EF63 /* ExtensionConst.m in Sources */,
+				BAEE4EA12776BE070039EF63 /* AppDelegate.m in Sources */,
 				BA1D97B7263AFAE00066545F /* main.m in Sources */,
+				BAEE4E9C2776BE070039EF63 /* ShowingLogVC.m in Sources */,
+				BAEE4EA32776BE070039EF63 /* SplitViewController.m in Sources */,
+				BAEE4E9E2776BE070039EF63 /* LeftFileVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

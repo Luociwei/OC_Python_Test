@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA2294DF241618DB0011D010 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2294DE241618DB0011D010 /* AppDelegate.m */; };
+		BA2294E2241619420011D010 /* WindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2294E1241619420011D010 /* WindowVC.m */; };
+		BA2294E5241619560011D010 /* TabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2294E3241619550011D010 /* TabVC.m */; };
+		BA2294E8241619930011D010 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2294E7241619930011D010 /* ViewController.m */; };
+		BA2294EA2416199B0011D010 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA2294E92416199B0011D010 /* ViewController.xib */; };
+		BA2294EC241619BD0011D010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2294EB241619BD0011D010 /* Assets.xcassets */; };
+		BA2294EE241619CF0011D010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2294ED241619CF0011D010 /* Main.storyboard */; };
+		BA2294F0241619E30011D010 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA2294EF241619E30011D010 /* Info.plist */; };
+		BA2294F2241619F00011D010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2294F1241619F00011D010 /* main.m */; };
+		BA2294F724161A0B0011D010 /* script_cmds_0101.json in Resources */ = {isa = PBXBuildFile; fileRef = BA2294F524161A0B0011D010 /* script_cmds_0101.json */; };
+		BA2294F924161A150011D010 /* fixturesList.json in Resources */ = {isa = PBXBuildFile; fileRef = BA2294F824161A150011D010 /* fixturesList.json */; };
+		BA22950D2418724D0011D010 /* SearchListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22950B2418724D0011D010 /* SearchListVC.m */; };
+		BA22950E2418724D0011D010 /* SearchListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA22950C2418724D0011D010 /* SearchListVC.xib */; };
+		BA229513241879C30011D010 /* HWIOMode.m in Sources */ = {isa = PBXBuildFile; fileRef = BA229512241879C30011D010 /* HWIOMode.m */; };
+		BA2295192418B0100011D010 /* HWIO_Socpe.json in Resources */ = {isa = PBXBuildFile; fileRef = BA2295182418B0100011D010 /* HWIO_Socpe.json */; };
+		BA229550241A1FA80011D010 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22954E241A1FA80011D010 /* GCDAsyncSocket.m */; };
+		BA229552241A209F0011D010 /* HWIO.lua in Resources */ = {isa = PBXBuildFile; fileRef = BA229551241A209F0011D010 /* HWIO.lua */; };
+		BA22955E241A24F70011D010 /* CWGeneralManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22955D241A24F70011D010 /* CWGeneralManager.framework */; };
+		BA22955F241A24F70011D010 /* CWGeneralManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA22955D241A24F70011D010 /* CWGeneralManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA22957C241C722C0011D010 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22957B241C722C0011D010 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BA22957F241C72700011D010 /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22957D241C725F0011D010 /* libicucore.A.tbd */; };
+		BA229583241C73EE0011D010 /* HWIO_Frequency.lua in Resources */ = {isa = PBXBuildFile; fileRef = BA229580241C73EE0011D010 /* HWIO_Frequency.lua */; };
+		BA229584241C73EE0011D010 /* HWIO_Current.lua in Resources */ = {isa = PBXBuildFile; fileRef = BA229581241C73EE0011D010 /* HWIO_Current.lua */; };
+		BA229585241C73EE0011D010 /* HWIO_Voltage.lua in Resources */ = {isa = PBXBuildFile; fileRef = BA229582241C73EE0011D010 /* HWIO_Voltage.lua */; };
+		BAFDC7FE242227C000B660BA /* WHPingTester.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFDC7FC242227C000B660BA /* WHPingTester.m */; };
+		BAFDC7FF242227C000B660BA /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFDC7FD242227C000B660BA /* SimplePing.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA8326FE23D047330084D385 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BA22955F241A24F70011D010 /* CWGeneralManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BA2294A024127A2C0011D010 /* CWGeneralManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CWGeneralManager.framework; path = ../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug/CWGeneralManager.framework; sourceTree = "<group>"; };
+		BA2294DD241618D10011D010 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA2294DE241618DB0011D010 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA2294E0241619410011D010 /* WindowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowVC.h; sourceTree = "<group>"; };
+		BA2294E1241619420011D010 /* WindowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowVC.m; sourceTree = "<group>"; };
+		BA2294E3241619550011D010 /* TabVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabVC.m; sourceTree = "<group>"; };
+		BA2294E4241619560011D010 /* TabVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabVC.h; sourceTree = "<group>"; };
+		BA2294E62416197E0011D010 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BA2294E7241619930011D010 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA2294E92416199B0011D010 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		BA2294EB241619BD0011D010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA2294ED241619CF0011D010 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BA2294EF241619E30011D010 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA2294F1241619F00011D010 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA2294F3241619FD0011D010 /* ClientSocket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClientSocket.entitlements; sourceTree = "<group>"; };
+		BA2294F524161A0B0011D010 /* script_cmds_0101.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = script_cmds_0101.json; sourceTree = "<group>"; };
+		BA2294F824161A150011D010 /* fixturesList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fixturesList.json; sourceTree = "<group>"; };
+		BA22950A2418724D0011D010 /* SearchListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchListVC.h; sourceTree = "<group>"; };
+		BA22950B2418724D0011D010 /* SearchListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchListVC.m; sourceTree = "<group>"; };
+		BA22950C2418724D0011D010 /* SearchListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchListVC.xib; sourceTree = "<group>"; };
+		BA229511241879C30011D010 /* HWIOMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWIOMode.h; sourceTree = "<group>"; };
+		BA229512241879C30011D010 /* HWIOMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWIOMode.m; sourceTree = "<group>"; };
+		BA2295182418B0100011D010 /* HWIO_Socpe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HWIO_Socpe.json; sourceTree = "<group>"; };
+		BA22954E241A1FA80011D010 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		BA22954F241A1FA80011D010 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		BA229551241A209F0011D010 /* HWIO.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HWIO.lua; sourceTree = "<group>"; };
+		BA22955D241A24F70011D010 /* CWGeneralManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CWGeneralManager.framework; sourceTree = "<group>"; };
+		BA22957A241C722C0011D010 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		BA22957B241C722C0011D010 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		BA22957D241C725F0011D010 /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libicucore.A.tbd; sourceTree = DEVELOPER_DIR; };
+		BA229580241C73EE0011D010 /* HWIO_Frequency.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HWIO_Frequency.lua; sourceTree = "<group>"; };
+		BA229581241C73EE0011D010 /* HWIO_Current.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HWIO_Current.lua; sourceTree = "<group>"; };
+		BA229582241C73EE0011D010 /* HWIO_Voltage.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HWIO_Voltage.lua; sourceTree = "<group>"; };
+		BA8326A623CF43310084D385 /* ClientSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFDC7FA242227C000B660BA /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		BAFDC7FB242227C000B660BA /* WHPingTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHPingTester.h; sourceTree = "<group>"; };
+		BAFDC7FC242227C000B660BA /* WHPingTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHPingTester.m; sourceTree = "<group>"; };
+		BAFDC7FD242227C000B660BA /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA8326A323CF43310084D385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA22955E241A24F70011D010 /* CWGeneralManager.framework in Frameworks */,
+				BA22957F241C72700011D010 /* libicucore.A.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA22954D241A1FA80011D010 /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				BA22954E241A1FA80011D010 /* GCDAsyncSocket.m */,
+				BA22954F241A1FA80011D010 /* GCDAsyncSocket.h */,
+			);
+			name = TCP;
+			path = ../../TCP;
+			sourceTree = "<group>";
+		};
+		BA229579241C722C0011D010 /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				BA22957A241C722C0011D010 /* RegexKitLite.h */,
+				BA22957B241C722C0011D010 /* RegexKitLite.m */,
+			);
+			path = Regex;
+			sourceTree = "<group>";
+		};
+		BA83269D23CF43310084D385 = {
+			isa = PBXGroup;
+			children = (
+				BA22957D241C725F0011D010 /* libicucore.A.tbd */,
+				BA22955D241A24F70011D010 /* CWGeneralManager.framework */,
+				BA8326A823CF43310084D385 /* ClientSocket */,
+				BA8326A723CF43310084D385 /* Products */,
+				BA8326BD23CFE9B10084D385 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA8326A723CF43310084D385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA8326A623CF43310084D385 /* ClientSocket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA8326A823CF43310084D385 /* ClientSocket */ = {
+			isa = PBXGroup;
+			children = (
+				BAFDC7F9242227C000B660BA /* pingTool */,
+				BA229579241C722C0011D010 /* Regex */,
+				BA22954D241A1FA80011D010 /* TCP */,
+				BA2294DD241618D10011D010 /* AppDelegate.h */,
+				BA2294DE241618DB0011D010 /* AppDelegate.m */,
+				BA2294E0241619410011D010 /* WindowVC.h */,
+				BA2294E1241619420011D010 /* WindowVC.m */,
+				BA2294E4241619560011D010 /* TabVC.h */,
+				BA2294E3241619550011D010 /* TabVC.m */,
+				BA2294E62416197E0011D010 /* ViewController.h */,
+				BA2294E7241619930011D010 /* ViewController.m */,
+				BA2294E92416199B0011D010 /* ViewController.xib */,
+				BA22950A2418724D0011D010 /* SearchListVC.h */,
+				BA22950B2418724D0011D010 /* SearchListVC.m */,
+				BA22950C2418724D0011D010 /* SearchListVC.xib */,
+				BA229511241879C30011D010 /* HWIOMode.h */,
+				BA229512241879C30011D010 /* HWIOMode.m */,
+				BA2294EB241619BD0011D010 /* Assets.xcassets */,
+				BA2294ED241619CF0011D010 /* Main.storyboard */,
+				BA2294EF241619E30011D010 /* Info.plist */,
+				BA2294F1241619F00011D010 /* main.m */,
+				BA229581241C73EE0011D010 /* HWIO_Current.lua */,
+				BA229580241C73EE0011D010 /* HWIO_Frequency.lua */,
+				BA229582241C73EE0011D010 /* HWIO_Voltage.lua */,
+				BA229551241A209F0011D010 /* HWIO.lua */,
+				BA2295182418B0100011D010 /* HWIO_Socpe.json */,
+				BA2294F824161A150011D010 /* fixturesList.json */,
+				BA2294F524161A0B0011D010 /* script_cmds_0101.json */,
+				BA2294F3241619FD0011D010 /* ClientSocket.entitlements */,
+			);
+			path = ClientSocket;
+			sourceTree = "<group>";
+		};
+		BA8326BD23CFE9B10084D385 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA2294A024127A2C0011D010 /* CWGeneralManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAFDC7F9242227C000B660BA /* pingTool */ = {
+			isa = PBXGroup;
+			children = (
+				BAFDC7FA242227C000B660BA /* SimplePing.h */,
+				BAFDC7FB242227C000B660BA /* WHPingTester.h */,
+				BAFDC7FC242227C000B660BA /* WHPingTester.m */,
+				BAFDC7FD242227C000B660BA /* SimplePing.m */,
+			);
+			path = pingTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA8326A523CF43310084D385 /* ClientSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA8326BA23CF43340084D385 /* Build configuration list for PBXNativeTarget "ClientSocket" */;
+			buildPhases = (
+				BA8326A223CF43310084D385 /* Sources */,
+				BA8326A323CF43310084D385 /* Frameworks */,
+				BA8326A423CF43310084D385 /* Resources */,
+				BA8326FE23D047330084D385 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClientSocket;
+			productName = ClientSocket;
+			productReference = BA8326A623CF43310084D385 /* ClientSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA83269E23CF43310084D385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "ciwei luo";
+				TargetAttributes = {
+					BA8326A523CF43310084D385 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = BA8326A123CF43310084D385 /* Build configuration list for PBXProject "ClientSocket" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA83269D23CF43310084D385;
+			productRefGroup = BA8326A723CF43310084D385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA8326A523CF43310084D385 /* ClientSocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA8326A423CF43310084D385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA2294EA2416199B0011D010 /* ViewController.xib in Resources */,
+				BA229584241C73EE0011D010 /* HWIO_Current.lua in Resources */,
+				BA2295192418B0100011D010 /* HWIO_Socpe.json in Resources */,
+				BA2294EE241619CF0011D010 /* Main.storyboard in Resources */,
+				BA22950E2418724D0011D010 /* SearchListVC.xib in Resources */,
+				BA229583241C73EE0011D010 /* HWIO_Frequency.lua in Resources */,
+				BA2294F924161A150011D010 /* fixturesList.json in Resources */,
+				BA229552241A209F0011D010 /* HWIO.lua in Resources */,
+				BA229585241C73EE0011D010 /* HWIO_Voltage.lua in Resources */,
+				BA2294F724161A0B0011D010 /* script_cmds_0101.json in Resources */,
+				BA2294F0241619E30011D010 /* Info.plist in Resources */,
+				BA2294EC241619BD0011D010 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA8326A223CF43310084D385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA22957C241C722C0011D010 /* RegexKitLite.m in Sources */,
+				BA229550241A1FA80011D010 /* GCDAsyncSocket.m in Sources */,
+				BA2294E8241619930011D010 /* ViewController.m in Sources */,
+				BA229513241879C30011D010 /* HWIOMode.m in Sources */,
+				BA2294E5241619560011D010 /* TabVC.m in Sources */,
+				BAFDC7FE242227C000B660BA /* WHPingTester.m in Sources */,
+				BA2294DF241618DB0011D010 /* AppDelegate.m in Sources */,
+				BAFDC7FF242227C000B660BA /* SimplePing.m in Sources */,
+				BA2294E2241619420011D010 /* WindowVC.m in Sources */,
+				BA22950D2418724D0011D010 /* SearchListVC.m in Sources */,
+				BA2294F2241619F00011D010 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BA8326B823CF43340084D385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BA8326B923CF43340084D385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BA8326BB23CF43340084D385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClientSocket/ClientSocket.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ClientSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suncode.ClientSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA8326BC23CF43340084D385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClientSocket/ClientSocket.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ClientSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suncode.ClientSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA8326A123CF43310084D385 /* Build configuration list for PBXProject "ClientSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA8326B823CF43340084D385 /* Debug */,
+				BA8326B923CF43340084D385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA8326BA23CF43340084D385 /* Build configuration list for PBXNativeTarget "ClientSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA8326BB23CF43340084D385 /* Debug */,
+				BA8326BC23CF43340084D385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA83269E23CF43310084D385 /* Project object */;
+}

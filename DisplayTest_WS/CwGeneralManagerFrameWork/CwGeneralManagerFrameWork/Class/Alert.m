@@ -12,19 +12,29 @@
 @implementation Alert
 // just remind the user, there are some error infomation.
 + (void)cw_RemindException: (NSString*)Title Information:(NSString*)info{
-    NSAlert* alert = [[NSAlert alloc]init];
-    [alert setMessageText:Title];
-    [alert addButtonWithTitle:@"OK"];
-    [alert setInformativeText:info];
-    [alert runModal];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSAlert* alert = [[NSAlert alloc]init];
+        [alert setMessageText:Title];
+        [alert addButtonWithTitle:@"OK"];
+        [alert setInformativeText:info];
+        [alert runModal];
+        
+    });
+    
+
 }
 
 // just remind the user.
 + (void)cw_messageBox: (NSString*)Title Information:(NSString*)info{
-    NSAlert* alert = [[NSAlert alloc]init];
-    [alert setMessageText:Title];
-    [alert setInformativeText:info];
-    [alert runModal];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSAlert* alert = [[NSAlert alloc]init];
+        [alert setMessageText:Title];
+        [alert setInformativeText:info];
+        [alert runModal];
+        
+    });
+
 }
 
 // just remind the user.
@@ -34,6 +44,7 @@
     //                               alternateButton:@"Cancel"
     //                                   otherButton:nil
     //                     informativeTextWithFormat:@""];
+    
     NSAlert *alert = [[NSAlert alloc]init];
     [alert setInformativeText:@""]; //sub text
     [alert setMessageText:prompt];
@@ -51,6 +62,7 @@
     //                               alternateButton:@"Cancel"
     //                                   otherButton:nil
     //                     informativeTextWithFormat:@""];
+    
     NSAlert *alert = [[NSAlert alloc]init];
     [alert setInformativeText:informativeText]; //sub text
     [alert setMessageText:prompt];

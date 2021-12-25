@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ORSSerialPort/Framework Project/ORSSerialPort.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SocketPort/CWGeneralManager/CWGeneralManager.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SocketPort/AsyncSocket/AsyncSocket.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestPlanEditor/TestPlanEditor.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,16 @@
+{
+    "commands":[
+        "0",
+        "2",
+        "1",
+        "3",
+        "[123]io set(2,bit63=1,bit66=0)","[123]io set(1,bit50=1)"
+    ],
+    
+    "parameters":{
+        "loopTimes":"1",
+        "commandDelay":"0.5",
+        "endStr":">\n",
+        "timeout":"2",
+    }
+}

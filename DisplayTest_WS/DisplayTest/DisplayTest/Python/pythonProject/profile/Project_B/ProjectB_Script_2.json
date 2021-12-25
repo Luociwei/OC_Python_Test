@@ -1,0 +1,23 @@
+{
+    
+    "TEST_ITEM_1":[
+        "ProjectB_Script2_TEST_ITEM_1",
+    ],
+
+    "TEST_ITEM_2":[
+        "ProjectB_Script2_TEST_ITEM_2",
+    ],
+    "TEST_ITEM_3":[
+        "ProjectB_Script2_TEST_ITEM_3",
+    ],
+    "TEST_ITEM_4":[
+        "ProjectB_Script2_TEST_ITEM_4",
+    ],
+    "TEST_ITEM_5":[
+        "ProjectB_Script2_TEST_ITEM_1",
+        "ProjectB_Script2_TEST_ITEM_2",
+        "ProjectB_Script2_TEST_ITEM_3",
+        "ProjectB_Script2_TEST_ITEM_4",
+    ],
+  
+}

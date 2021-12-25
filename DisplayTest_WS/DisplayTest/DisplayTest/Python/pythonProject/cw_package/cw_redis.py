@@ -51,6 +51,12 @@ class RedisClient(object):
         return self.redis.flushdb()
 
     def set(self, key_string, value):
+        if type(key_string) == type(u''):
+            # unicode转string
+            key_string = key_string.encode("utf-8")
+        if type(value) == type(u''):
+            # unicode转string
+            value = value.encode("utf-8")
 
         if type(key_string) != type(''):
             print ('the key_name inputted must be string!!!')
@@ -104,48 +110,36 @@ class RedisClient(object):
         finally:
             return recv
 
-    def get_common(self):
-        return self.get('common')
+    def get_loading_data(self):
+        return self.get('loading')
 
-    def set_common(self, data_title, data_info):
-        if not len(data_title):
-            data_title = ''
-        if not len(data_info):
-            data_info = ''
-
-        message_dict = {
-            'title': data_title,
-            'info': data_info,
-
+    def set_loading_data(self, info_str, percent_str):
+        mes_dict = {
+            'percent': percent_str,
+            'info': info_str,
         }
-        return self.set('common', message_dict)
+        return self.set('loading', mes_dict)
 
-    def set_common_warning(self, data_info):
-        return self.set_common('warning', data_info)
-
-    def set_common_loading(self, data_info):
-        return self.set_common('loading', data_info)
-
-    def get_data_table(self, key):
-        tb = self.redis.get(key)
-        print("self.redis.get", tb)
-        tb_data = []
-        if tb:
-            # tb = tb.decode('utf-8')
-            tb = tb.split("\n")
-            # tb = (tb[1:-1])  # 去掉数据库首尾元素
-            for i in tb:
-                k = re.sub('\"', '', i)  # 去掉数据库引号
-                h = re.sub(',', '', k)  # 去掉数据库逗号
-                m = h.strip()  # 去掉数据库首尾空白
-                if is_number(m):
-                    tb_data.append(eval(m))  # 去掉数字的引号
-                else:
-                    tb_data.append(m)
-        else:
-            tb_data.append('')
-
-        return tb_data
+    # def get_data_table(self, key):
+    #     tb = self.redis.get(key)
+    #     print("self.redis.get", tb)
+    #     tb_data = []
+    #     if tb:
+    #         # tb = tb.decode('utf-8')
+    #         tb = tb.split("\n")
+    #         # tb = (tb[1:-1])  # 去掉数据库首尾元素
+    #         for i in tb:
+    #             k = re.sub('\"', '', i)  # 去掉数据库引号
+    #             h = re.sub(',', '', k)  # 去掉数据库逗号
+    #             m = h.strip()  # 去掉数据库首尾空白
+    #             if is_number(m):
+    #                 tb_data.append(eval(m))  # 去掉数字的引号
+    #             else:
+    #                 tb_data.append(m)
+    #     else:
+    #         tb_data.append('')
+    #
+    #     return tb_data
 
 
 if __name__ == '__main__':

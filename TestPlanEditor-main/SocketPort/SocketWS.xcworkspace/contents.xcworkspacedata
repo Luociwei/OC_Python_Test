@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CWGeneralManager/CWGeneralManager.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ClientSocket/ClientSocket.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AsyncSocket/AsyncSocket.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WeChatService/WeChatService.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:10086_Service/10086_Service.xcodeproj">
+   </FileRef>
+</Workspace>
