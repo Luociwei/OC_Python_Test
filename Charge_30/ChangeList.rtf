@@ -1,0 +1,392 @@
+{\rtf1\ansi\ansicpg936\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fnil\fcharset0 Calibri;
+\f3\fnil\fcharset134 STSongti-SC-Regular;\f4\froman\fcharset0 Times-Roman;\f5\fnil\fcharset0 HelveticaNeue;
+\f6\fnil\fcharset0 SimSun;\f7\fnil\fcharset134 .PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red69\green60\blue204;\red0\green0\blue0;
+\red23\green26\blue29;\red35\green35\blue35;\red53\green53\blue53;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c34510\c33725\c83922;\cssrgb\c0\c0\c0;
+\cssrgb\c11765\c13725\c15294;\cssrgb\c18039\c18039\c18039;\cssrgb\c27059\c27059\c27059;}
+\paperw11900\paperh16840\vieww11700\viewh15340\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Date: 20180705\
+Version: v1.0.8\
+Arthur:  CWLuo\
+summery:\
+\
+1.read current
+\f1 \'a1\'a2
+\f0 volt
+\f1 \'a1\'a2
+\f0 per by batman command
+\f1 \'a1\'a3\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf0 \cb2 \expnd0\expndtw0\kerning0
+2.Solve the issue of auto disconnect  and not upload 
+\f1 to 
+\f2 PDCA if not charge finish
+\f1 \'a1\'a3\
+
+\f2 3. Add UART communication log.\'a0\
+4.SW 
+\f0\fs24 \cb1 \kerning1\expnd0\expndtw0 Version: v1.0.8,
+\f2\fs28 \cb2 \expnd0\expndtw0\kerning0
+Control board version: 930001F7330100B13\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 Date: 20180802\
+Version: v1.0.82\
+Arthur:  CWLuo\
+summery:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs32 \cf3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf4 \cb2 1.
+\f1 delete \'a1\'b0SR\'a1\'b1\'a1\'a2\'a1\'b0BHR\'a1\'b1commands before send \'a1\'b0BATMAN\'a1\'b1command\'a1\'a3
+\f2 \cb1 \
+\cb2 2.above 70% send slow charge command
+\f1 \'a1\'a3
+\f2 else send fast charge command
+\f1 \'a1\'a3
+\f2 \cb1 \
+\cb2 3.\cf0 Control board version:\cf4 :930001F7330100B13\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 Date: 20180803\
+Version: v1.0.9\
+Arthur:  CWLuo\
+summery:\
+\
+
+\f1 1.add SR before send BATMAN command.
+\f0 \
+
+\f1 1.add BHR before send BATMAN command.\
+\
+
+\f0 Date: 20180805\
+Version: v1.1.0\
+Arthur:  CWLuo\
+summery:\
+\
+
+\f1 1.delay 2s after send SR command.
+\f0 \
+
+\f1 2.delay 5s after send BHR command
+\f3\fs28 \expnd0\expndtw0\kerning0
+.
+\f1\fs24 \kerning1\expnd0\expndtw0 \
+\
+
+\f0 Date: 20180808\
+Version: v1.1.3\
+Arthur:  CWLuo\
+summery:\
+\pard\tx566\tx1133\tx1700\tx2113\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 1.update version from v1.1.0 to v1.1.3. 
+\f5\b\fs30 \cf5 \cb2 \expnd0\expndtw0\kerning0
+Control Board FW: 
+\f4\b0\fs28 \cf0 \cb1 \kerning1\expnd0\expndtw0 : 
+\f2 \cf4 \cb2 \expnd0\expndtw0\kerning0
+930001F7330100B13
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 2.delay 5s after send \'a1\'b0[bls]\'a1\'b1 command and delay 2s after send \'a1\'b0[sr]\'a1\'b1 in the first test loop .
+\f0 \
+
+\f1 3.send \'a1\'b0[batman]\'a1\'b1 command after read sn, if not  return the correct value.cycle repeat at most 10 times until get the correct value.\
+\pard\tx566\tx1133\tx1700\tx2113\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 \expnd0\expndtw0\kerning0
+4
+\f3 .
+\f4 add communication log\
+5.if not reach the limit range, never upload datas to PDCA.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 Date: 20180809\
+Version: v1.2.0\
+Arthur:  CWLuo\
+summery:\
+\pard\tx566\tx1133\tx1700\tx2113\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 1.update version from v1.1.0 to v1.2.0. 
+\f5\b\fs30 \cf5 \cb2 \expnd0\expndtw0\kerning0
+Control Board FW: 
+\f4\b0\fs28 \cf0 \cb1 \kerning1\expnd0\expndtw0 : 
+\f2 \cf4 \cb2 \expnd0\expndtw0\kerning0
+930001F7330100B13
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 2.delay 5s after send \'a1\'b0[bls]\'a1\'b1 command and delay 2s after send \'a1\'b0[sr]\'a1\'b1 in the first test loop .
+\f0 \
+
+\f1 3.send \'a1\'b0[batman]\'a1\'b1 command after read sn, if not  return the correct value.cycle repeat at most 10 times until get the correct value.\
+\pard\tx566\tx1133\tx1700\tx2113\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 \expnd0\expndtw0\kerning0
+4
+\f3 .
+\f4 add communication log\
+5.if not reach the limit range, never upload datas to PDCA.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 Date: 20180810\
+Version: v1.2.1\
+Arthur:  CWLuo\
+summery:\
+\pard\tx566\tx1133\tx1700\tx2113\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 1.update version from v1.2.0 to v1.2.1. 
+\f5\b\fs30 \cf5 \cb2 \expnd0\expndtw0\kerning0
+Control Board FW: 
+\f4\b0\fs28 \cf0 \cb1 \kerning1\expnd0\expndtw0 : 
+\f2 \cf4 \cb2 \expnd0\expndtw0\kerning0
+930001F7330100B14
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2113\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 \expnd0\expndtw0\kerning0
+2.add discharge function.\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 Date: 20180811\
+Version: v1.2.2\
+Arthur:  CWLuo\
+summery:\
+\pard\tx566\tx1133\tx1700\tx2113\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 1.update version from v1.2.1 to v1.2.2. 
+\f5\b\fs30 \cf5 \cb2 \expnd0\expndtw0\kerning0
+Control Board FW: 
+\f4\b0\fs28 \cf0 \cb1 \kerning1\expnd0\expndtw0 : 
+\f2 \cf4 \cb2 \expnd0\expndtw0\kerning0
+930001F7330100B14
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2113\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f4\fs28 \cf0 \expnd0\expndtw0\kerning0
+2.add  \'93audio stop\'94 command before start discharge .\
+3
+\f3 .solve clash issue sometimes.
+\f4 \
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 Date: 20180815\
+Version: v1.2.3\
+Arthur:  CWLuo\
+summery:
+\f3\fs28 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 \cb2 1.update version from v1.2.2 to v1.2.3. 
+\b \cf5 Control Board FW: 
+\b0 \cf0 : 930001F7330100B14
+\fs32 \cb1 \
+
+\fs29\fsmilli14667 \cb2 2.add [ttim-03] command and open tunnel before send\'93 ft reset system \'94command.
+\fs32 \cb1 \
+
+\fs29\fsmilli14667 \cb2 3.upload data to PDCA after H16 was taken off from the rack.
+\fs32 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 4.send "[bls]"command 3 times to solve auto disconnect issue sometimes.\cb1 \
+\cb2 5.change the soc percentage limit of PDCA with spec limit.
+\f4\fs28 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2113\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 Date: 20180816\
+Version: v1.2.4\
+Arthur:  CWLuo\
+summery:
+\f3\fs28 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 \cb2 1.update version from v1.2.3 to v1.2.4. 
+\b \cf5 Control Board FW: 
+\b0 \cf0 : 930001F7330100B14\
+2.add a 
+\fs32 \cb1 Local database to record Failure times of sn.\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs28 \cf0 3.It
+\f2\fs32  will not be uploaded to insight if the production already failed more than three times .\
+4.auto clear 
+\f1 the 
+\f2 record  
+\f1 datas
+\f2  \'a0once a weak
+\f1 \'a1\'a3
+\f4\fs28 \
+\pard\tx566\tx1133\tx1700\tx2113\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 Date: 20180816\
+Version: v1.2.5\
+Arthur:  CWLuo\
+summery:
+\f3\fs28 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \cb2 1.update version from v1.2.4 to v1.2.5. 
+\b \cf5 Control Board FW: 
+\b0 \cf0 : 930001F7330100B14\
+2.chage 30ports spec limit from 63
+\f1 \'a1\'ab
+\f2 68 to 25
+\f1 \'a1\'ab
+\f2 45
+\f1 \cb1 \'a1\'a3
+\f2 \
+3.perfect some functions base on v1.2.4.please deprecated V1.2.4\cf6 ,Use V1.2.5 instead.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 Date: 20180818\
+Version: v1.2.6\
+Arthur:  CWLuo\
+summery:
+\f2\fs28 \cf6 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 1.update version from v1.2.5 to v1.2.6. 
+\b \cf5 Control Board FW: 
+\b0 \cf0 : 930001F7330100B14\
+2.
+\f4 \cb1 It
+\f2\fs32  would not be uploaded to insight if the production already failed more than two times .\
+
+\fs28 \cb2 3.
+\f4 \cb1 It
+\f2\fs32  would not be limited to uploaded to insight if green or red .
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 Date: 20180909\
+Version: v1.2.7\
+Arthur:  CWLuo\
+summery:
+\f2\fs32 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf0 \cb2 1.update version from v1.2.6 to v1.2.7. 
+\b \cf5 Control Board FW: 
+\b0 \cf0 : 930001F7330100B14\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \cb1 2.send 
+\f1 [bout 1] every time in the loop.
+\f2 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 Date: 20180915\
+Version: v1.3.0\
+Arthur:  CWLuo\
+summery:
+\f2\fs32 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf0 \cb2 1.Update version from v1.2.7 to v1.3.0. 
+\b \cf5 Control Board FW: 
+\b0 \cf0 : 
+\f6\fs29\fsmilli14667 \cb1 930001F7330100B18
+\f2\fs28 \cb2 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 2.
+\f5 \cf7 Replace 
+\f7 \'a1\'b0
+\f5 ft reset system
+\f7 \'a1\'b1
+\f5  with 
+\f7 \'a1\'b0
+\f5 audio stop
+\f7 \'a1\'b1 
+\f5 and 
+\f7 \'a1\'b0
+\f5 ft uvp enable" command to set UVP after discharging.\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 Date: 20180919\
+Version: v1.3.1\
+Arthur:  CWLuo\
+summery:
+\f2\fs32 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf0 \cb2 1.Update version from v1.3.0 to v1.3.1. 
+\b \cf5 Control Board FW: 
+\b0 \cf0 : 
+\f6\fs29\fsmilli14667 \cb1 930001F7330100B19
+\f1\fs28 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5\fs24 \cf7 \kerning1\expnd0\expndtw0 2.Change the timeout from 40s to 2s for closing tunnel.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab560\pardirnatural\partightenfactor0
+
+\f0 \cf0 Date: 20180920\
+Version: v1.3.2\
+Arthur:  CWLuo\
+summery:
+\f2\fs32 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf0 \cb2 1.Update version from v1.3.1 to v1.3.2. 
+\b \cf5 Control Board FW: 
+\b0 \cf0 : 
+\f6\fs29\fsmilli14667 \cb1 930001F7330100B20\
+2.
+\f5\fs28 \cf7 Replace 
+\f7 \'a1\'b0
+\f5 f
+\f4\fs29\fsmilli14667 \cf0 audio play sin 48000 0 2000 1000 1.0 loop
+\f7\fs28 \cf7 \'a1\'b1
+\f5  with 
+\f7 \'a1\'b0
+\f4\fs29\fsmilli14667 \cf0 audio play sin 48000 0 2000 1000 0.965 loop
+\f5\fs28 \cf7 " Command and add \'93
+\f4\fs29\fsmilli14667 \cf0 audio leap bypass\'94 command
+\f1\fs28 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f5\fs24 \cf7 \kerning1\expnd0\expndtw0 3.A
+\f1 udit
+\f5  mode for pink background color
+\f1 \'a1\'a3
+\f4\fs28 \cf0 \expnd0\expndtw0\kerning0
+\
+}

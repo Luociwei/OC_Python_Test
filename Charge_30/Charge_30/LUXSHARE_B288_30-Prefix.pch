@@ -1,0 +1,21 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+
+#import <Cocoa/Cocoa.h>
+#import "NSDate+Extension.h"
+#import "NSString+Extension.h"
+#import "ConfigPlist.h"
+#import "CSVLog2.h"
+
+#define MAX_BOARD 3
+//static const int MAX_CHANNEL_PER_BOARD = 10;
+#define MAX_CHANNEL_PER_BOARD 10
+#define DATA_POINTS 18
+#define TEST_CHANNEL 30
+#define snFailRecordPath  @"/vault/H16_Slot_InsertNUM/Insertnum/snFailRecord.txt"
+#endif

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4085D3541575F3BF0C8E7C402B19175A97E47AD3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8C0E7715D0E7E561FB8F6381D2107F40AF52815F" : 9223372036854775807,
+    "4085D3541575F3BF0C8E7C402B19175A97E47AD3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A99129E1-C433-4FE8-9CC0-F2296E41CA9F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8C0E7715D0E7E561FB8F6381D2107F40AF52815F" : "..\/100ports\/B288_SmartCharge_100",
+    "4085D3541575F3BF0C8E7C402B19175A97E47AD3" : "B288_SmartCharge_30\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LUXSHARE_B288_30",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LUXSHARE_B288_30.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "14.116.155.70:COCO_Innorev_BU2\/Sation_SA_B288_SmartCharger_30ports",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4085D3541575F3BF0C8E7C402B19175A97E47AD3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "14.116.155.70:COCO_Innorev_BU2\/Station_B288_SmartCharger_100ports.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8C0E7715D0E7E561FB8F6381D2107F40AF52815F"
+    }
+  ]
+}

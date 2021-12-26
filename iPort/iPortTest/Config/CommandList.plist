@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>常规测试命令</string>
+		<key>send</key>
+		<string>debug key1</string>
+		<key>response</key>
+		<string>{&quot;debug&quot;: &quot;key1&quot;}
+{&quot;group&quot;: &quot;message&quot;, &quot;item&quot;: &quot;start&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a02-a01&quot;, &quot;value&quot;: 611.53, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a02-a01&quot;, &quot;value&quot;: 60, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a03-a01&quot;, &quot;value&quot;: 609.22, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a03-a01&quot;, &quot;value&quot;: 62, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a04-a01&quot;, &quot;value&quot;: 640.00, &quot;typ&quot;: &quot;vdrp&quot;, &quot;lim&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;result&quot;: &quot;Pass&quot;}
+......
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a09-a01&quot;, &quot;value&quot;: 641.00, &quot;typ&quot;: &quot;vdrp&quot;, &quot;lim&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a10-a01&quot;, &quot;value&quot;: 599.97, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a10-a01&quot;, &quot;value&quot;: 61, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a11-a01&quot;, &quot;value&quot;: 640.44, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a11-a01&quot;, &quot;value&quot;: 61, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b02-a01&quot;, &quot;value&quot;: 594.19, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b02-a01&quot;, &quot;value&quot;: 61, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b03-a01&quot;, &quot;value&quot;: 590.72, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b03-a01&quot;, &quot;value&quot;: 60, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b04-a01&quot;, &quot;value&quot;: 641.00, &quot;typ&quot;: &quot;vdrp&quot;, &quot;lim&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;result&quot;: &quot;Pass&quot;}
+......
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b09-a01&quot;, &quot;value&quot;: 640.00, &quot;typ&quot;: &quot;vdrp&quot;, &quot;lim&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b10-a01&quot;, &quot;value&quot;: 591.88, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b10-a01&quot;, &quot;value&quot;: 61, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b11-a01&quot;, &quot;value&quot;: 631.19, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b11-a01&quot;, &quot;value&quot;: 62, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a02-a01&quot;, &quot;value&quot;: 613.85, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a02-a01&quot;, &quot;value&quot;: 61, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a03-a01&quot;, &quot;value&quot;: 624.26, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a03-a01&quot;, &quot;value&quot;: 62, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a04-a01&quot;, &quot;value&quot;: 641.00, &quot;typ&quot;: &quot;vdrp&quot;, &quot;lim&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;result&quot;: &quot;Pass&quot;}
+......
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a09-a01&quot;, &quot;value&quot;: 640.00, &quot;typ&quot;: &quot;vdrp&quot;, &quot;lim&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a10-a01&quot;, &quot;value&quot;: 603.44, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a10-a01&quot;, &quot;value&quot;: 61, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a11-a01&quot;, &quot;value&quot;: 632.35, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a11-a01&quot;, &quot;value&quot;: 62, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b02-a01&quot;, &quot;value&quot;: 584.94, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b02-a01&quot;, &quot;value&quot;: 61, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b03-a01&quot;, &quot;value&quot;: 627.72, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b03-a01&quot;, &quot;value&quot;: 62, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b04-a01&quot;, &quot;value&quot;: 641.00, &quot;typ&quot;: &quot;vdrp&quot;, &quot;lim&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;result&quot;: &quot;Pass&quot;}
+......
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b09-a01&quot;, &quot;value&quot;: 641.00, &quot;typ&quot;: &quot;vdrp&quot;, &quot;lim&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b10-a01&quot;, &quot;value&quot;: 640.44, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b10-a01&quot;, &quot;value&quot;: 64, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b11-a01&quot;, &quot;value&quot;: 620.79, &quot;typ&quot;: &quot;cap&quot;, &quot;lim&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;result&quot;: &quot;Pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b11-a01&quot;, &quot;value&quot;: 62, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: 5, &quot;short&quot;: 15000}, &quot;result&quot;: &quot;Open&quot;}
+{&quot;group&quot;: &quot;message&quot;,&quot;item&quot;: &quot;end&quot;}</string>
+		<key>rowHeight</key>
+		<string>520</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>LCD翻页查看数据表格</string>
+		<key>send</key>
+		<string>debug key2</string>
+		<key>response</key>
+		<string>{&quot;debug&quot;: &quot;key2&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取FW信息</string>
+		<key>send</key>
+		<string>getversion</string>
+		<key>response</key>
+		<string>例如：{&quot;version&quot;: &quot;3.0_0806&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置灯的状态</string>
+		<key>send</key>
+		<string>setled r/g/b 50</string>
+		<key>response</key>
+		<string>例如：{&quot;led&quot;: &quot;r&quot;, &quot;value&quot;: 50}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>开关相关组类</string>
+		<key>send</key>
+		<string>setgrp adj/gnd/vbus/TR/dds on/off</string>
+		<key>response</key>
+		<string>例如：{&quot;gnd&quot;: &quot;on&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取组类开关状态</string>
+		<key>send</key>
+		<string>getcfg grp</string>
+		<key>response</key>
+		<string>例如：{&quot;adj&quot;: &quot;off&quot;, &quot;gnd&quot;: &quot;on&quot;, &quot;vbus&quot;: &quot;off&quot;, &quot;dds&quot;: &quot;on&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置adj组测试项种类</string>
+		<key>send</key>
+		<string>setitm adj res/vdrp/cap/skip a01-a02,a02-a03,……</string>
+		<key>response</key>
+		<string>例如：{&quot;adj&quot;: {&quot;res&quot;: &quot;a01-a02,a02-a03&quot;}}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取adj组测试项状态</string>
+		<key>send</key>
+		<string>getcfg itm adj</string>
+		<key>response</key>
+		<string>例如：{&quot;adj&quot;: {&quot;res&quot;: &quot;a01-a02,a02-a03,a03-a04,a04-a05,a05-a06,a06-a07,a07-a08,a08-a09,a09-a10,a10-a11,
+a11-a12,b01-b02,b02-b03,b03-b04,b04-b05,b05-b06,b06-b07,b07-b08,b08-b09,b09-b10,b10-b11,b11-b12,
+a02-b11,a03-b10,a05-b08,a06-b07,a07-b06,a08-b05,a10-b03,a11-b02&quot;}}</string>
+		<key>rowHeight</key>
+		<string>40</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置gnd组测试项种类</string>
+		<key>send</key>
+		<string>setitm gnd res/vdrp/cap/skip a02,a03,……</string>
+		<key>response</key>
+		<string>例如：{&quot;gnd&quot;: {&quot;cap&quot;: &quot;a02,a03&quot;}}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取gnd组测试项状态</string>
+		<key>send</key>
+		<string>getcfg itm gnd</string>
+		<key>response</key>
+		<string>例如：{&quot;gnd&quot;: {, &quot;vdrp&quot;: &quot;a04,a05,a06,a07,a08,a09,b04,b05,b06,b07,b08,b09&quot;, 
+&quot;cap&quot;: &quot;a02,a03,a10,a11,b02,b03,b10,b11&quot;}}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置vbus组测试项种类</string>
+		<key>send</key>
+		<string>setitm vbus res/vdrp/cap/skip a01,a02,a03,……</string>
+		<key>response</key>
+		<string>例如：{&quot;vbus&quot;: {&quot;res&quot;: &quot;a01,a02&quot;}}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取vbus组测试项状态</string>
+		<key>send</key>
+		<string>getcfg itm vbus</string>
+		<key>response</key>
+		<string>例如：{&quot;vbus&quot;: {&quot;res&quot;: &quot;a01,a02&quot;}}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置adj组测试项数据上下限</string>
+		<key>send</key>
+		<string>setlim adj res/vdrp/cap 200000000 5 a01-a02,a02-a03,……</string>
+		<key>response</key>
+		<string>例如：{&quot;adj&quot;: {&quot;res&quot;: {&quot;open limit&quot;: 200000000, &quot;short limit&quot;: 5, &quot;a01-a02,a02-a03&quot;}}}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取adj组测试项数据上下限</string>
+		<key>send</key>
+		<string>getcfg lim adj</string>
+		<key>response</key>
+		<string>例如：{&quot;adj&quot;: {&quot;a01-a02&quot;: {&quot;open&quot;: 200000000, &quot;short&quot;: 5}, &quot;a02-a03&quot;: {&quot;open&quot;: 200000000, &quot;short&quot;: 5},
+ &quot;a03-a04&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a04-a05&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a05-a06&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5},
+ &quot;a06-a07&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a07-a08&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a08-a09&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, 
+&quot;a09-a10&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a10-a11&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a11-a12&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, 
+&quot;b01-b02&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;b02-b03&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;b03-b04&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, 
+&quot;b04-b05&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;b05-b06&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;b06-b07&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, 
+&quot;b07-b08&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;b08-b09&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;b09-b10&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, 
+&quot;b10-b11&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;b11-b12&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a02-b11&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, 
+&quot;a03-b10&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a05-b08&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a06-b07&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5},
+ &quot;a07-b06&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a08-b05&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}, &quot;a10-b03&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5},
+ &quot;a11-b02&quot;: {&quot;open&quot;: 20000000, &quot;short&quot;: 5}}}</string>
+		<key>rowHeight</key>
+		<string>130</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置gnd组测试项数据上下限</string>
+		<key>send</key>
+		<string>setlim gnd cap 200 2000 a02,a03,……</string>
+		<key>response</key>
+		<string>例如：{&quot;gnd&quot;: {&quot;cap&quot;: {&quot;open limit&quot;: 200, &quot;short limit&quot;: 2000, &quot;a02,a03&quot;}}}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取gnd组测试项数据上下限</string>
+		<key>send</key>
+		<string>getcfg lim gnd</string>
+		<key>response</key>
+		<string>例如：{&quot;gnd&quot;: {&quot;a02&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;a03&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;a04&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, 
+&quot;a05&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;a06&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;a07&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, 
+&quot;a08&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;a09&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;a10&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, 
+&quot;a11&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;b02&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;b03&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, 
+&quot;b04&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b05&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b06&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5},
+ &quot;b07&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b08&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b09&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5},
+ &quot;b10&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}, &quot;b11&quot;: {&quot;open&quot;: 200, &quot;short&quot;: 2000}}}</string>
+		<key>rowHeight</key>
+		<string>80</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置vbus组测试项数据上下限</string>
+		<key>send</key>
+		<string>setlim vbus res 200000000 5 a02,a03,……</string>
+		<key>response</key>
+		<string>例如：{&quot;vbus&quot;: {&quot;res&quot;: {&quot;open limit&quot;: 200000000, &quot;short limit&quot;: 5, &quot;a02,a03&quot;}}}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取vbus组测试项数据上下限</string>
+		<key>send</key>
+		<string>getcfg lim vbus</string>
+		<key>response</key>
+		<string>例如：{&quot;vbus&quot;: {&quot;a01&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;a02&quot;: {&quot;open&quot;: 200000000, &quot;short&quot;: 5}, &quot;a03&quot;: {&quot;open&quot;: 200000000, &quot;short&quot;: 5},
+ &quot;a05&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;a06&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;a07&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, 
+&quot;a08&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;a10&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;a11&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, 
+&quot;a12&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b01&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b02&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, 
+&quot;b03&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b05&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b06&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, 
+&quot;b07&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b08&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b10&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, 
+&quot;b11&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}, &quot;b12&quot;: {&quot;open&quot;: 1000000, &quot;short&quot;: 5}}}</string>
+		<key>rowHeight</key>
+		<string>80</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置PCBA 地址</string>
+		<key>send</key>
+		<string>setpos l/r/c1l/c2l/c3l/c1r/c2r/c3r/0</string>
+		<key>response</key>
+		<string>例如：{&quot;iPort Position&quot;: &quot;value&quot;: &quot;NA&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置PCBA序列号</string>
+		<key>send</key>
+		<string>sysconfig write serial_number DE_3.5_1828_0051</string>
+		<key>response</key>
+		<string>例如：{&quot;serial_number&quot;: &quot;DE_3.5_1828_0051&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>读取PCBA序列号</string>
+		<key>send</key>
+		<string>sysconfig read serial_number</string>
+		<key>response</key>
+		<string>例如：{&quot;serial_number&quot;: &quot;DE_3.5_1828_0051&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置硬件版本号</string>
+		<key>send</key>
+		<string>sysconfig write hw_version DE_3.5_v1.1_20180314</string>
+		<key>response</key>
+		<string>例如：{&quot;hw_version&quot;: &quot;DE_3.5_v1.1_20180314&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>读取硬件版本号</string>
+		<key>send</key>
+		<string>sysconfig read hw_version</string>
+		<key>response</key>
+		<string>例如：{&quot;hw_version&quot;: &quot;DE_3.5_v1.1_20180314&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置软件版本号</string>
+		<key>send</key>
+		<string>sysconfig write fw_version DE_3.5_3.0_0806</string>
+		<key>response</key>
+		<string>例如：{&quot;fw_version&quot;: &quot;DE_3.5_3.0_0806&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>读取软件版本号</string>
+		<key>send</key>
+		<string>sysconfig read fw_version</string>
+		<key>response</key>
+		<string>例如：{&quot;fw_version&quot;: &quot;DE_3.5_3.0_0806&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置生产日期</string>
+		<key>send</key>
+		<string>sysconfig write date_manufactured 20180810</string>
+		<key>response</key>
+		<string>例如：{&quot;date_manufactured&quot;: &quot;20180810&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>读取生产日期</string>
+		<key>send</key>
+		<string>sysconfig read date_manufactured</string>
+		<key>response</key>
+		<string>例如：{&quot;date_manufactured&quot;: &quot;20180810&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置dds频率</string>
+		<key>send</key>
+		<string>dds set frequency 800</string>
+		<key>response</key>
+		<string>例如：{&quot;frequency&quot;: &quot;800&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置dds增益</string>
+		<key>send</key>
+		<string>dds set pga 4</string>
+		<key>response</key>
+		<string>例如：{&quot;pga&quot;: &quot;4&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置dds buff值</string>
+		<key>send</key>
+		<string>dds set buff 3</string>
+		<key>response</key>
+		<string>例如：{&quot;buff&quot;: &quot;3&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>读取dds 频率，增益，buff值</string>
+		<key>send</key>
+		<string>dds readcfg</string>
+		<key>response</key>
+		<string>例如：{&quot;frequency&quot;: &quot;800&quot;, &quot;pga&quot;: &quot;4&quot;, &quot;buff&quot;: &quot;3&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置测试VBUS的频率</string>
+		<key>send</key>
+		<string>dds2 set frequency 20</string>
+		<key>response</key>
+		<string>例如：{&quot;frequency&quot;: &quot;20&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置测试VBUS的增益</string>
+		<key>send</key>
+		<string>dds2 set pga 0</string>
+		<key>response</key>
+		<string>例如：{&quot;pga&quot;: &quot;0&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置测试VBUS的buff值</string>
+		<key>send</key>
+		<string>dds2 set buff 2</string>
+		<key>response</key>
+		<string>例如：{&quot;buff&quot;: &quot;2&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置测试VBUS的数据下限</string>
+		<key>send</key>
+		<string>dds2 set shortlim 400</string>
+		<key>response</key>
+		<string>例如：{&quot;shortlim&quot;: &quot;400&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>读取测试VBUS的频率，增益，buff值</string>
+		<key>send</key>
+		<string>dds2 readcfg</string>
+		<key>response</key>
+		<string>例如：{&quot;frequency&quot;: &quot;20&quot;, &quot;pga&quot;: &quot;0&quot;, &quot;buff&quot;: &quot;2&quot;, &quot;shortlim&quot;: &quot;400&quot;}</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>设置北京时间</string>
+		<key>send</key>
+		<string>settime 2018/02/24-6-15:32:12</string>
+		<key>response</key>
+		<string>例如：2018/02/24-6-15:32:12</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>读取北京时间</string>
+		<key>send</key>
+		<string>gettime</string>
+		<key>response</key>
+		<string>例如：2018/02/24-6-15:32:22</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取MCU日志记录</string>
+		<key>send</key>
+		<string>getlog 100</string>
+		<key>response</key>
+		<string>返回最多100条测试记录，数据太多不列举</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>清除MCU日志记录</string>
+		<key>send</key>
+		<string>clearlog</string>
+		<key>response</key>
+		<string>例如：logger is cleared</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>CC脚波形最大值，最小值测试</string>
+		<key>send</key>
+		<string>ccpintest</string>
+		<key>response</key>
+		<string>例如：{&quot;group&quot;: &quot;message&quot;, &quot;item&quot;: &quot;start&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a05&quot;, &quot;value&quot;: 0, &quot;typ&quot;: &quot;voh&quot;, &quot;lim&quot;: {&quot;open&quot;: 2500, &quot;short&quot;: -1}, &quot;result&quot;: &quot;fail&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a05&quot;, &quot;value&quot;: 0, &quot;typ&quot;: &quot;vol&quot;, &quot;lim&quot;: {&quot;open&quot;: -1, &quot;short&quot;: 100}, &quot;result&quot;: &quot;pass&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b05&quot;, &quot;value&quot;: 0, &quot;typ&quot;: &quot;voh&quot;, &quot;lim&quot;: {&quot;open&quot;: 2500, &quot;short&quot;: -1}, &quot;result&quot;: &quot;fail&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b05&quot;, &quot;value&quot;: 0, &quot;typ&quot;: &quot;vol&quot;, &quot;lim&quot;: {&quot;open&quot;: -1, &quot;short&quot;: 100}, &quot;result&quot;: &quot;pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a05&quot;, &quot;value&quot;: 0, &quot;typ&quot;: &quot;voh&quot;, &quot;lim&quot;: {&quot;open&quot;: 2500, &quot;short&quot;: -1}, &quot;result&quot;: &quot;fail&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a05&quot;, &quot;value&quot;: 0, &quot;typ&quot;: &quot;vol&quot;, &quot;lim&quot;: {&quot;open&quot;: -1, &quot;short&quot;: 100}, &quot;result&quot;: &quot;pass&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b05&quot;, &quot;value&quot;: 0, &quot;typ&quot;: &quot;voh&quot;, &quot;lim&quot;: {&quot;open&quot;: 2500, &quot;short&quot;: -1}, &quot;result&quot;: &quot;fail&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;b05&quot;, &quot;value&quot;: 0, &quot;typ&quot;: &quot;vol&quot;, &quot;lim&quot;: {&quot;open&quot;: -1, &quot;short&quot;: 100}, &quot;result&quot;: &quot;pass&quot;}
+{&quot;group&quot;: &quot;message&quot;,&quot;item&quot;: &quot;end&quot;}</string>
+		<key>rowHeight</key>
+		<string>120</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取CC脚波形原始数据</string>
+		<key>send</key>
+		<string>getccpin left/right a05/b05</string>
+		<key>response</key>
+		<string>获得300个原始数据</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>VBUS脚DDS测试值</string>
+		<key>send</key>
+		<string>vbustest</string>
+		<key>response</key>
+		<string>例如：{&quot;group&quot;: &quot;message&quot;, &quot;item&quot;: &quot;start&quot;}
+{&quot;pos&quot;: &quot;Left&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a04-a01&quot;, &quot;value&quot;: 86, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: -1, &quot;short&quot;: 500}, &quot;result&quot;: &quot;Short&quot;}
+{&quot;pos&quot;: &quot;Right&quot;, &quot;group&quot;: &quot;gnd&quot;, &quot;item&quot;: &quot;a04-a01&quot;, &quot;value&quot;: 87, &quot;typ&quot;: &quot;dds&quot;, &quot;lim&quot;: {&quot;open&quot;: -1, &quot;short&quot;: 500}, &quot;result&quot;: &quot;Short&quot;}
+{&quot;group&quot;: &quot;message&quot;,&quot;item&quot;: &quot;end&quot;}</string>
+		<key>rowHeight</key>
+		<string>60</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>获取VBUS脚DDS原始数据</string>
+		<key>send</key>
+		<string>getdds2 left/right a04/a09/b04/b09</string>
+		<key>response</key>
+		<string>获得最多500个原始数据</string>
+	</dict>
+</array>
+</plist>

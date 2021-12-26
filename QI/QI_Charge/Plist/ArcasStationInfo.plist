@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>stationTestItem</key>
+	<string>WC_OTP_Arcas</string>
+	<key>PDCAStationSN</key>
+	<string>07</string>
+	<key>PDCAStationID</key>
+	<string>TEST2</string>
+	<key>softwareVersion</key>
+	<string>V1.0.3</string>
+	<key>BoardVersion</key>
+	<string>V1.5</string>
+	<key>productionName</key>
+	<string>B435</string>
+	<key>fixtureID</key>
+	<string>01</string>
+	<key>isBobcat</key>
+	<string>1</string>
+	<key>isPudding</key>
+	<string>1</string>
+	<key>pythonOpenCommand</key>
+	<string>/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6 /Applications/MatCli_0.7.2/cli.py</string>
+	<key>UUT1PortName</key>
+	<string>usbserial-UUT1</string>
+	<key>UUT2PortName</key>
+	<string>usbserial-UUT2</string>
+	<key>QI1PortName</key>
+	<string>/dev/cu.usbserial-WCB1</string>
+	<key>QI2PortName</key>
+	<string>/dev/cu.usbserial-WCB2</string>
+	<key>OverlayVersion</key>
+	<string>0103</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+//
+//  AppDelegate.h
+//  B435_WirelessCharge
+//
+//  Created by 罗词威 on 25/05/18.
+//  Copyright © 2018年 Innrove. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+
+@interface AppDelegate : NSObject <NSApplicationDelegate>
+
+
+@end
+
+

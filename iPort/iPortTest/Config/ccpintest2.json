@@ -1,0 +1,38 @@
+{"debug": "key1"}
+{"group": "message", "item": "start"}
+{"pos": "RF", "group": "adj", "item": "a02-a03", "value": 2443.00, "typ": "vdrp", "lim": {"open": 2600, "short": 100}, "result": "Pass"}
+{"pos": "RF", "group": "adj", "item": "a06-a07", "value": 2479.00, "typ": "vdrp", "lim": {"open": 2600, "short": 100}, "result": "Pass"}
+{"pos": "RF", "group": "adj", "item": "a10-a11", "value": 2433.00, "typ": "vdrp", "lim": {"open": 2600, "short": 100}, "result": "Pass"}
+{"pos": "RF", "group": "adj", "item": "b02-b03", "value": 2442.00, "typ": "vdrp", "lim": {"open": 2600, "short": 100}, "result": "Pass"}
+{"pos": "RF", "group": "adj", "item": "b06-b07", "value": 2479.00, "typ": "vdrp", "lim": {"open": 2600, "short": 100}, "result": "Pass"}
+{"pos": "RF", "group": "adj", "item": "b10-b11", "value": 2432.00, "typ": "vdrp", "lim": {"open": 2600, "short": 100}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a02-a01", "value": 299.31, "typ": "cap", "lim": {"open": 200, "short": 600}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a02-a01", "value": 1065, "typ": "dds", "lim": {"open": 2000, "short": 550}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a03-a01", "value": 301.62, "typ": "cap", "lim": {"open": 200, "short": 600}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a03-a01", "value": 1057, "typ": "dds", "lim": {"open": 2000, "short": 550}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a04-a01", "value": 117.00, "typ": "vdrp", "lim": {"open": 600, "short": 90}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a04-a01", "value": 480, "typ": "dds", "lim": {"open": -1, "short": 400}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a05-a01", "value": 553.00, "typ": "vdrp", "lim": {"open": 650, "short": 450}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a06-a01", "value": 718.00, "typ": "vdrp", "lim": {"open": 2600, "short": 250}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a07-a01", "value": 721.00, "typ": "vdrp", "lim": {"open": 2600, "short": 250}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a08-a01", "value": 615.00, "typ": "vdrp", "lim": {"open": 750, "short": 450}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a09-a01", "value": 117.00, "typ": "vdrp", "lim": {"open": 600, "short": 90}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a10-a01", "value": 449.64, "typ": "cap", "lim": {"open": 200, "short": 600}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a10-a01", "value": 1054, "typ": "dds", "lim": {"open": 2000, "short": 550}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a11-a01", "value": 447.33, "typ": "cap", "lim": {"open": 200, "short": 600}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "a11-a01", "value": 1059, "typ": "dds", "lim": {"open": 2000, "short": 550}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b02-a01", "value": 300.46, "typ": "cap", "lim": {"open": 200, "short": 600}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b02-a01", "value": 1043, "typ": "dds", "lim": {"open": 2000, "short": 550}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b03-a01", "value": 313.18, "typ": "cap", "lim": {"open": 200, "short": 600}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b03-a01", "value": 1071, "typ": "dds", "lim": {"open": 2000, "short": 550}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b04-a01", "value": 117.00, "typ": "vdrp", "lim": {"open": 600, "short": 90}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b05-a01", "value": 551.00, "typ": "vdrp", "lim": {"open": 650, "short": 450}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b06-a01", "value": 723.00, "typ": "vdrp", "lim": {"open": 2600, "short": 250}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b07-a01", "value": 728.00, "typ": "vdrp", "lim": {"open": 2600, "short": 250}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b08-a01", "value": 616.00, "typ": "vdrp", "lim": {"open": 750, "short": 450}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b09-a01", "value": 117.00, "typ": "vdrp", "lim": {"open": 600, "short": 90}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b10-a01", "value": 477.39, "typ": "cap", "lim": {"open": 200, "short": 600}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b10-a01", "value": 1046, "typ": "dds", "lim": {"open": 2000, "short": 550}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b11-a01", "value": 480.86, "typ": "cap", "lim": {"open": 200, "short": 600}, "result": "Pass"}
+{"pos": "RF", "group": "gnd", "item": "b11-a01", "value": 1069, "typ": "dds", "lim": {"open": 2000, "short": 550}, "result": "Pass"}
+{"group": "message","item": "end"}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>stationTestItem</key>
+	<string>WC_OTP_Callisto</string>
+	<key>PDCAStationID</key>
+	<string>TEST1</string>
+	<key>softwareVersion</key>
+	<string>v1.0.0</string>
+	<key>productionName</key>
+	<string>B435</string>
+	<key>PDCAStationSN</key>
+	<string>06</string>
+	<key>fixtureID</key>
+	<string>01</string>
+</dict>
+</plist>
